@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {title}{Deployment Strategies in CI/CD Pipelines}{1}{chapter.1}
+\authcount {1}
+\contentsline {author}{Niko Benkler \unskip \ \ignorespaces \href {mailto:niko.benkler@student.kit.edu}{niko.benkler@student.kit.edu}}{1}{chapter.1}
+\contentsline {section}{\numberline {1}Kapitel}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1}Unterkapitel}{3}{subsection.1.1.1}
