@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {2.2}DevOps}{4}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {2.3}Continuous software engineering}{4}{subsection.1.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Continuous Integration}{4}{subsubsection.1.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Continuous Delivery}{4}{subsubsection.1.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Continuous Deployment}{5}{figure.1.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Continuous Delivery}{5}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Continuous Deployment}{5}{subsubsection.1.2.3.3}
