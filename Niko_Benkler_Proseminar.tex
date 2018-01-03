@@ -100,14 +100,13 @@ Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deplo
 
 \subsubsection{Continuous Deployment}
 An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
-Whereas CD implies the usage of CDE practices, the inversion is not correct. \cite{shahin2017continuous}.
+Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
 Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section 5 %TODO stimmt die section!
 
 
 \begin{figure}[h]
-	\centering
-	\resizebox*{1.0 \textwidth}{!}{\includegraphics
-		{RelCSE}}  
+	\hspace*{-2cm} 
+	\includegraphics[height=4.5cm]{RelCSE}  
 	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
 \end{figure}
 
