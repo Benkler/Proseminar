@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  3 JAN 2018 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  3 JAN 2018 16:50
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -618,28 +618,28 @@ Overfull \hbox (13.31622pt too wide) in paragraph at lines 59--67
 r-way to heaven' [[]],
  []
 
-(Niko_Benkler_Proseminar.bbl [3
+[3
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+] (Niko_Benkler_Proseminar.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (Niko_Benkler_Proseminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
-(rerunfilecheck)             Checksum: 98C07FA205B6921AD552084001F66F88;314.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+(rerunfilecheck)             Checksum: 6B92C37A3DC01EE34CC1D7FAA81B7318;374.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 9319 strings out of 493312
- 136949 string characters out of 3128523
- 347116 words of memory out of 3000000
- 12713 multiletter control sequences out of 15000+200000
+ 9323 strings out of 493312
+ 137018 string characters out of 3128523
+ 347157 words of memory out of 3000000
+ 12715 multiletter control sequences out of 15000+200000
  15976 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,5n,36p,587b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,5n,36p,594b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecti0900.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\
@@ -653,9 +653,9 @@ ppen\ec\dpi600\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (4 pages, 121110 bytes).
+Output written on Niko_Benkler_Proseminar.pdf (4 pages, 127730 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

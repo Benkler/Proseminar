@@ -5,3 +5,4 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1.1}
 \contentsline {section}{\numberline {2}Background}{3}{section.1.2}
 \contentsline {subsection}{\numberline {2.1}Agile Methodologies}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {2.2}DevOps}{4}{subsection.1.2.2}

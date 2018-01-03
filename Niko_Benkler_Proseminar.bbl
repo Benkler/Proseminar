@@ -1,6 +1,12 @@
 \def\etalchar#1{$^{#1}$}
 \begin{thebibliography}{SCLZ{\etalchar{+}}16}
 
+\bibitem[BaWZ15]{bass2015devops}
+Len Bass, Ingo Weber und Liming Zhu.
+\newblock {\em DevOps: A Software Architect's Perspective}.
+\newblock Addison-Wesley Professional.
+\newblock 2015.
+
 \bibitem[ClSA15]{claps2015journey}
 Gerry~Gerard Claps, Richard~Berntsson Svensson und Ayb{\"u}ke Aurum.
 \newblock On the journey to continuous deployment: Technical and social
