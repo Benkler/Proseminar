@@ -21,4 +21,16 @@ Gerald Schermann, J{\"u}rgen Cito, Philipp Leitner, Uwe Zdun und Harald Gall.
   and deployment.
 \newblock {T}echnischer {B}ericht, PeerJ Preprints, 2016.
 
+\bibitem[ShBZ17]{shahin2017continuous}
+Mojtaba Shahin, Muhammad~Ali Babar und Liming Zhu.
+\newblock Continuous Integration, Delivery and Deployment: A Systematic Review
+  on Approaches, Tools, Challenges and Practices.
+\newblock {\em IEEE Access}, Band~5, 2017, S.~3909--3943.
+
+\bibitem[TaKB16]{taheritanjani2016comparison}
+Sajjad Taheritanjani, Stephan Krusche und Bernd Br{\"u}gge.
+\newblock A Comparison between Commercial and Open Source Reference
+  Implementations for the Rugby Process Model.
+\newblock {T}echnischer {B}ericht, A University Research Report, 2016.
+
 \end{thebibliography}
