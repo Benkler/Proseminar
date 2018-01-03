@@ -1,9 +1,24 @@
-\begin{thebibliography}{TaKB16}
+\def\etalchar#1{$^{#1}$}
+\begin{thebibliography}{SCLZ{\etalchar{+}}16}
 
-\bibitem[TaKB16]{taheritanjani2016comparison}
-Sajjad Taheritanjani, Stephan Krusche und Bernd Br{\"u}gge.
-\newblock A Comparison between Commercial and Open Source Reference
-  Implementations for the Rugby Process Model.
-\newblock {T}echnischer {B}ericht, A University Research Report, 2016.
+\bibitem[ClSA15]{claps2015journey}
+Gerry~Gerard Claps, Richard~Berntsson Svensson und Ayb{\"u}ke Aurum.
+\newblock On the journey to continuous deployment: Technical and social
+  challenges along the way.
+\newblock {\em Information and Software technology}, Band~57, 2015, S.~21--31.
+
+\bibitem[OlAB12]{olsson2012climbing}
+Helena~Holmstr{\"o}m Olsson, Hiva Alahyari und Jan Bosch.
+\newblock Climbing the" Stairway to Heaven"--A Mulitiple-Case Study Exploring
+  Barriers in the Transition from Agile Development towards Continuous
+  Deployment of Software.
+\newblock In {\em Software Engineering and Advanced Applications (SEAA), 2012
+  38th EUROMICRO Conference on}. IEEE, 2012, S.~392--399.
+
+\bibitem[SCLZ{\etalchar{+}}16]{schermann2016empirical}
+Gerald Schermann, J{\"u}rgen Cito, Philipp Leitner, Uwe Zdun und Harald Gall.
+\newblock An empirical study on principles and practices of continuous delivery
+  and deployment.
+\newblock {T}echnischer {B}ericht, PeerJ Preprints, 2016.
 
 \end{thebibliography}

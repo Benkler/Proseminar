@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  2 JAN 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  3 JAN 2018 11:12
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -499,37 +499,42 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip54
+)
+("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.s
+ty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count151
 ) (Niko_Benkler_Proseminar.aux)
 \openout1 = `Niko_Benkler_Proseminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
 .mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count151
+\scratchcounter=\count152
 \scratchdimen=\dimen147
 \scratchbox=\box58
-\nofMPsegments=\count152
-\nofMParguments=\count153
+\nofMPsegments=\count153
+\nofMParguments=\count154
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count154
+\MPscratchCnt=\count155
 \MPscratchDim=\dimen148
-\MPnumerator=\count155
-\makeMPintoPDFobject=\count156
+\MPnumerator=\count156
+\makeMPintoPDFobject=\count157
 \everyMPtoPDFconversion=\toks29
 )
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
@@ -547,9 +552,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count157
+\c@lstlisting=\count158
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
 f.sty"
@@ -559,22 +564,22 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count158
+\c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (Niko_Benkler_Proseminar.out) (Niko_Benkler_Proseminar.out)
 \@outlinefile=\write3
 \openout3 = `Niko_Benkler_Proseminar.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.f
 d"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.f
 d"
@@ -587,12 +592,9 @@ Package hyperref Warning: bookmark level for unknown title defaults to 0.
 Package hyperref Warning: bookmark level for unknown author defaults to 0.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\unskip' on input line 39.
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\href ' on input line 39.
+ []
 
 [1
 
@@ -604,31 +606,42 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
  [2
 
-] (Niko_Benkler_Proseminar.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+]
+Overfull \hbox (14.677pt too wide) in paragraph at lines 59--67
+\T1/cmr/m/n/10 Fast-changing and un-pre-dictable mar-kets, chang-ing cus-tomer 
+re-quire-ments [[]]
+ []
+
+
+Overfull \hbox (13.31622pt too wide) in paragraph at lines 59--67
+\T1/cmr/m/n/10 This sem-i-nar pa-per presents an evo-lu-tion path, called 'stai
+r-way to heaven' [[]],
+ []
+
+(Niko_Benkler_Proseminar.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
  [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
-
-(Niko_Benkler_Proseminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ (Niko_Benkler_Proseminar.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
-(rerunfilecheck)             Checksum: 92EA104654584C77E8D195BB13501D5E;312.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
+(rerunfilecheck)             Checksum: 3E45ACAC52E04B2B8C6C67EAF96E5042;184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 9086 strings out of 493312
- 134276 string characters out of 3128523
- 241079 words of memory out of 3000000
- 12498 multiletter control sequences out of 15000+200000
- 12188 words of font info for 31 fonts, out of 3000000 for 9000
+ 9308 strings out of 493312
+ 136755 string characters out of 3128523
+ 345015 words of memory out of 3000000
+ 12708 multiletter control sequences out of 15000+200000
+ 15200 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,5n,36p,282b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,5n,36p,587b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecbx1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+00\ecti0900.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1200.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKT
 eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\Nikolaus\AppDa
@@ -636,10 +649,12 @@ ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\N
 ikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 > <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (3 pages, 68172 bytes).
+public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on Niko_Benkler_Proseminar.pdf (3 pages, 105316 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

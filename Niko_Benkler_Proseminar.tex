@@ -22,32 +22,51 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+\usepackage{lipsum}
+
 
 
 \begin{document}
 
 \mainmatter
+%TODO Titel ändern?????
 \title{Deployment Strategies in CI/CD Pipelines}
 \titlerunning{Deployment Strategies in CI/CD Pipelines}
-%\author{Niko Benkler}
-%\href{mailto:niko.benkler@student.kit.edu}{niko.benkler@student.kit.edu}
-\author{Niko Benkler \\ \href{mailto:niko.benkler@student.kit.edu}{niko.benkler@student.kit.edu}}
+\author{Niko Benkler }
 \authorrunning{Model-driven Software Quality Engineering}
 \institute{Supervisor: Dr. Robert Heinrich \\ \href{mailto:robert.heinrich@kit.edu}{robert.heinrich@kit.edu}}
 \date{13.01.2018}
 \maketitle
-\begin{abstract} An dieser Stelle sollte später eine Kurzzusammenfassung stehen.
-\cite{taheritanjani2016comparison}
+
+\begin{abstract} 
+ 	In the last decade, software development experienced a huge transition. Since agile methodologies were introduces in the early 2000, software development became faster and faster. Today, another software development process is emerging: Continuous Software Engineering (CSE). CSE, especially Continuous Integration(CI), Continuous Delivery(CDE) and Continuous Deployment(CD) receive more and more attention in organizations such as Facebook, Paddy Power and Atlassian but also in small start-up companies. 
+ 	It enables them to e.g. deliver software more frequently, reduce time-to-market, obtain customer feedback faster, build the right product or to improve product quality. 
+ 	Therefore, this seminar paper presents the current state of the art concerning Continuous Practices, compares the traditional deployment strategies with the new CSE practices and proposes some tools, that can be used in a CI/CD Pipeline to support CSE. 
+ 	% TODO: da fehlt noch was 10 scientific paper and a book were studied, in order to cover 
+ 	\\
+ 	\\
+ 	\textbf{Keywords - }continuous software development, continuous integration, continuous delivery, continuous deployment, DevOps, CI/CD Pipeline
+ 	 
+	
+
 \end{abstract}
 
 \tableofcontents
 \clearpage
 
 
-\section{Kapitel}
-\subsection{Unterkapitel}
-% Normaler LNCS Zitierstil
-%\bibliographystyle{splncs}
+\section{Introduction}
+Today, the software development process has to face many difficult demands. Fast-changing and unpredictable markets, changing customer requirements \cite{claps2015journey} and rapidly advancing information technologies \cite{olsson2012climbing} require a faster process of software development. 
+To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey}. Therefore, releasing software becomes even faster. 
+\\
+This seminar paper presents an evolution path, called 'stairway to heaven' \cite{olsson2012climbing}, which describes a possible transition from traditional development towards CD. 
+As the core of CDE is a deployment pipeline \cite{schermann2016empirical}, the paper also presents its usual phases and the possible tools, that support each phase.
+Nevertheless, studying several papers revealed, that CDE not only comes with benefits, but also with huge social and technical challenges \cite{claps2015journey}. The paper clarifies them and proposes some mitigation strategies. 
+%TODO  Stimmt der remainder noch???
+The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing}. That section is followed by the explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that is caused by CDE and possible mitigation strategies. Finally, I present my conclusion in section VI.
+
+
+
 \bibliographystyle{itmalpha}
 % TODO: Ändern der folgenden Zeile, damit die .bib-Datei gefunden wird
 \bibliography{literatur}
