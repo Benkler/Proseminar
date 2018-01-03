@@ -6,3 +6,7 @@
 \contentsline {section}{\numberline {2}Background}{3}{section.1.2}
 \contentsline {subsection}{\numberline {2.1}Agile Methodologies}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {2.2}DevOps}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {2.3}Continuous software engineering}{4}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Continuous Integration}{4}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Continuous Delivery}{4}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Continuous Deployment}{4}{figure.1.1}
