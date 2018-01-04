@@ -127,22 +127,31 @@ This section describes the transition from traditional development to Continuous
 In the remainder of this section each phase of the "stairway to heaven" is discussed in detail. 
 The barriers each transition causes, are discussed in section V. %TODO stimmt das? 
 
+\subsection{The Stairway to Heaven}
+The main ideas within this section come from \cite{shahin2017continuous} and \cite{olsson2012climbing}.
+
 \begin{figure}[h]
 	\hspace*{-2cm} 
 	\includegraphics[height=4cm]{Stairway}  
 	\caption{\label{Stairway}The "stairway to heaven", and the main practices associated to the phase in this evolution step\cite{schermann2016empirical}} 
 \end{figure}
 
-\subsection{Phase 1: Traditional Development}
+
+\subsubsection{Phase 1: Traditional Development}
 Traditional deployment is a software development approach, that is characterized by slow development cycles, the "waterfall model"  or a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process is typically at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the included disadvantages. It has to be noticed, that it is not the aim of the seminar paper to judge about the suitability of this kind of software development and architecture. But for successfully implementing Continuous Practices, this kind of architecture is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution in agile organization. 
 
-\subsection{Phase 2: Agile Organization}
+\subsubsection{Phase 2: Agile Organization}
 A brief introduction in Agile Methodologies is given in \ref{background}. Here, agile methodologies are already put into practice, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
 To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams work on complete features which supports iterative development an as a consequence, improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it is passes all required test, they merge it into the main project. 
 \\ 
 The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI. 
 
-\subsection{Phase 3: Continuous Integration}  
+\subsubsection{Phase 3: Continuous Integration}  
+The core of CI is the continuous integration of code into a shared repository across all teams developing a software product. Again a cultural shift is necessary in order to realize CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. The continuous integration of code by many different teams can result in long-living parallel development branches . To reduce this complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. What happens to features that are not ready to be deployed, but already integrated into master? This is the reason why we  need the concept of Feature Toggles. In very simple terms, Feature Toggles permit to switch on or off certain features. So whenever a feature is in a deployable state, you just turn it on. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness. Dashboards, public monitors in the office or chat tools inform everybody and creates transparency.
+\\
+It is clear from Fig. \ref{RelCSE}, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: 1. Add a test based on a required feature, 2. Run all test and see which test fails, 3. Write or refactor the code, 4. Run the tests again. Repeat those steps in very short development cycles helps to continuously check the quality of the written code. Test planning is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they make a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In cross-team testing, testing is performed by a group od developers from another team and vice versa. 
+
+
 
 
 
