@@ -42,6 +42,13 @@ Gerald Schermann, J{\"u}rgen Cito, Philipp Leitner, Uwe Zdun und Harald Gall.
   and deployment.
 \newblock {T}echnischer {B}ericht, PeerJ Preprints, 2016.
 
+\bibitem[ShBZ16]{shahin2016intersection}
+Mojtaba Shahin, Muhammad~Ali Babar und Liming Zhu.
+\newblock The Intersection of Continuous Deployment and Architecting Process:
+  Practitioners' Perspectives.
+\newblock In {\em Proceedings of the 10th ACM/IEEE International Symposium on
+  Empirical Software Engineering and Measurement}. ACM, 2016, S.~44.
+
 \bibitem[ShBZ17]{shahin2017continuous}
 Mojtaba Shahin, Muhammad~Ali Babar und Liming Zhu.
 \newblock Continuous Integration, Delivery and Deployment: A Systematic Review

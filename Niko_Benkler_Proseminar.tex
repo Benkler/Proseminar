@@ -66,7 +66,7 @@ Nevertheless, studying several papers revealed, that CDE not only comes with ben
 %TODO  Stimmt der remainder noch???
 The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by the explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that are caused by CDE and possible mitigation strategies. Finally, I present my conclusion in section VI.
 
-\section{Background}
+\section{Background} \label{background}
 Here, I give an overview of the most important keywords. Those keywords are necessary to understand the content of the seminar paper. When studying the given information about Continuous Software Engineering (CSE), one could clearly see that, there are no universally accepted definitions \cite{schermann2016empirical}. Terms like CDE and CD are sometimes used interchangeable, albeit the is a small but relevant difference \cite{shahin2017continuous}.
 Therefore, the following subsections provide the definitions as they are used in this seminar paper.
 
@@ -99,23 +99,44 @@ Continuous Integration \textbf{(CI)} is a CSE practice, in which developers inte
 A brief definition of Continuous Delivery \textbf{(CDE)} is given in \cite{laukkanen2016bottom}: "Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time." 
 Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, such as a less risky release process \cite{laukkanen2016bottom} due to automation or the ability to learn from real usage data \cite{olsson2012climbing}. As a result, the software developers can decide, whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manually. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
 
+\begin{figure}[b]
+	\hspace*{-2cm} 
+	\includegraphics[height=4.5cm]{RelCSE}  
+	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
+\end{figure}
+
 \subsubsection{Continuous Deployment}
 An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD and CDE practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
 Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
 Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section 5 %TODO stimmt die section!
 
 
+
+
+
+\section{The evolution path towards Continuous Deployment}
+This section describes the transition from traditional development to Continuous Deployment and some main practices associated to these phases, Fig. \ref{Stairway}. Many software companies are subjected to constant alteration in order to stay competitive. Therefore, they need to improve their way of building software.It is important to say, that the application model plays a big role for the success of the CD adoption. Albeit the traditional 'waterfall model' may be still adequate for some companies offering legacy software (e.g in the financial sector), CD gains more and more attraction for Web-based applications \cite{schermann2016empirical}.
+In the remainder of this section each phase of the "stairway to heaven" is discussed in detail. 
+The barriers each transition causes, are discussed in section V. %TODO stimmt das? 
+
 \begin{figure}[h]
 	\hspace*{-2cm} 
-	\includegraphics[height=4.5cm]{RelCSE}  
-	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
+	\includegraphics[height=4cm]{Stairway}  
+	\caption{\label{Stairway}The "stairway to heaven", and the main practices associated to the phase in this evolution step\cite{schermann2016empirical}} 
 \end{figure}
 
-\section{From traditional development to Continous Deployment}
+\subsection{Phase 1: Traditional Development}
+Traditional deployment is a software development approach, that is characterized by slow development cycles, the "waterfall model"  or a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process is typically at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the included disadvantages. It has to be noticed, that it is not the aim of the seminar paper to judge about the suitability of this kind of software development and architecture. But for successfully implementing Continuous Practices, this kind of architecture is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution in agile organization. 
 
-%Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process.
-In this section, I will describe a possible transition
+\subsection{Phase 2: Agile Organization}
+A brief introduction in Agile Methodologies is given in \ref{background}. Here, agile methodologies are already put into practice, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
+To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams work on complete features which supports iterative development an as a consequence, improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it is passes all required test, they merge it into the main project. 
+\\ 
+The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI.   
 
+
+
+\newpage
 
 \bibliographystyle{itmalpha}
 % TODO: Ändern der folgenden Zeile, damit die .bib-Datei gefunden wird

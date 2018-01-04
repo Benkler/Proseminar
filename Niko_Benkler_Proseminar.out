@@ -8,4 +8,6 @@
 \BOOKMARK [3][-]{subsubsection.1.2.3.1}{Continuous Integration}{subsection.1.2.3}% 8
 \BOOKMARK [3][-]{subsubsection.1.2.3.2}{Continuous Delivery}{subsection.1.2.3}% 9
 \BOOKMARK [3][-]{subsubsection.1.2.3.3}{Continuous Deployment}{subsection.1.2.3}% 10
-\BOOKMARK [1][-]{section.1.3}{From traditional development to Continous Deployment}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{The evolution path towards Continuous Deployment}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{Phase 1: Traditional Development}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{Phase 2: Agile Organization}{section.1.3}% 13
