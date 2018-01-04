@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  4 JAN 2018 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  4 JAN 2018 23:22
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -504,38 +504,59 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count151
+)
+("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.
+sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen147
+\extrarowheight=\dimen148
+\NC@list=\toks28
+\extratabsurround=\skip55
+\backup@length=\skip56
+)
+\TX@col@width=\dimen149
+\TX@old@table=\dimen150
+\TX@old@col=\dimen151
+\TX@target=\dimen152
+\TX@delta=\dimen153
+\TX@cols=\count152
+\TX@ftn=\toks29
 ) (Niko_Benkler_Proseminar.aux)
 \openout1 = `Niko_Benkler_Proseminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
 .mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen147
+\scratchcounter=\count153
+\scratchdimen=\dimen154
 \scratchbox=\box58
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen148
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks29
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen155
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks31
 )
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
 df-base.sty"
@@ -552,9 +573,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count158
+\c@lstlisting=\count159
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
 f.sty"
@@ -564,22 +585,22 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count159
+\c@section@level=\count160
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
  (Niko_Benkler_Proseminar.out) (Niko_Benkler_Proseminar.out)
 \@outlinefile=\write3
 \openout3 = `Niko_Benkler_Proseminar.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.f
 d"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 ("C:\Users\Nikolaus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.f
 d"
@@ -592,7 +613,7 @@ Package hyperref Warning: bookmark level for unknown title defaults to 0.
 Package hyperref Warning: bookmark level for unknown author defaults to 0.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
@@ -607,7 +628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--48
  [2
 
 ]
-Overfull \hbox (14.677pt too wide) in paragraph at lines 60--68
+Overfull \hbox (14.677pt too wide) in paragraph at lines 61--69
 \T1/cmr/m/n/10 Fast-changing and un-pre-dictable mar-kets, chang-ing cus-tomer 
 re-quire-ments [[]]
  []
@@ -615,14 +636,14 @@ re-quire-ments [[]]
 [3
 
 ]
-<RelCSE.jpg, id=159, 920.68968pt x 272.51813pt>
+<RelCSE.jpg, id=164, 920.68968pt x 272.51813pt>
 File: RelCSE.jpg Graphic file (type jpg)
 <use RelCSE.jpg>
-Package pdftex.def Info: RelCSE.jpg  used on input line 96. on input line 96.
+Package pdftex.def Info: RelCSE.jpg  used on input line 97. on input line 97.
 Package pdftex.def Info: Requested size: 432.56967pt x 128.0374pt on input line
- 96.
+ 97.
 
-Overfull \hbox (30.59569pt too wide) in paragraph at lines 95--97
+Overfull \hbox (30.59569pt too wide) in paragraph at lines 96--98
 []|  [] 
  []
 
@@ -630,66 +651,70 @@ Overfull \hbox (30.59569pt too wide) in paragraph at lines 95--97
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-Overfull \hbox (3.00648pt too wide) in paragraph at lines 106--108
+Overfull \hbox (3.00648pt too wide) in paragraph at lines 107--109
  \T1/cmr/bx/n/10 2.3.2 Con-tin-u-ous De-liv-ery[][] \T1/cmr/m/n/10 A brief def-
 i-ni-tion of Con-tin-u-ous De-liv-ery \T1/cmr/bx/n/10 (CDE)
  []
 
 [5 <./RelCSE.jpg>]
-<CDBenefits.jpg, id=204, 187.45032pt x 153.57375pt>
+<CDBenefits.jpg, id=209, 187.45032pt x 153.57375pt>
 File: CDBenefits.jpg Graphic file (type jpg)
 <use CDBenefits.jpg>
-Package pdftex.def Info: CDBenefits.jpg  used on input line 118. on input line 
-118.
+Package pdftex.def Info: CDBenefits.jpg  used on input line 119. on input line 
+119.
 Package pdftex.def Info: Requested size: 156.29019pt x 128.0374pt on input line
- 118.
+ 119.
 
-Overfull \hbox (3.93127pt too wide) in paragraph at lines 131--134
+Overfull \hbox (3.93127pt too wide) in paragraph at lines 132--135
 \T1/cmr/m/n/10 The main ideas within this sec-tion come from [[]], [[]] and [[]
 ].
  []
 
-<Stairway.jpg, id=221, 583.42969pt x 139.27031pt>
+<Stairway.jpg, id=226, 583.42969pt x 139.27031pt>
 File: Stairway.jpg Graphic file (type jpg)
 <use Stairway.jpg>
-Package pdftex.def Info: Stairway.jpg  used on input line 137. on input line 13
-7.
+Package pdftex.def Info: Stairway.jpg  used on input line 138. on input line 13
+8.
 Package pdftex.def Info: Requested size: 476.78629pt x 113.81102pt on input lin
-e 137.
+e 138.
 
-Overfull \hbox (74.8123pt too wide) in paragraph at lines 136--138
+Overfull \hbox (74.8123pt too wide) in paragraph at lines 137--139
 []|  [] 
  []
 
 [6 <./CDBenefits.jpg>] [7 <./Stairway.jpg>] [8]
-<teamstructure.jpg, id=275, 493.0922pt x 277.78781pt>
+<teamstructure.jpg, id=280, 493.0922pt x 277.78781pt>
 File: teamstructure.jpg Graphic file (type jpg)
 <use teamstructure.jpg>
-Package pdftex.def Info: teamstructure.jpg  used on input line 165. on input li
-ne 165.
+Package pdftex.def Info: teamstructure.jpg  used on input line 166. on input li
+ne 166.
 Package pdftex.def Info: Requested size: 202.02615pt x 113.81102pt on input lin
-e 165.
+e 166.
  [9 <./teamstructure.jpg>]
+Overfull \hbox (3.90947pt too wide) in paragraph at lines 184--190
+[] 
+ []
+
 [10] (Niko_Benkler_Proseminar.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (Niko_Benkler_Proseminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
-(rerunfilecheck)             Checksum: B95EFFA87A0F4B40E63FE38D9CF75869;1384.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+(rerunfilecheck)             Checksum: 7F8D8F5381B585A837A5A39BF0EEB3E9;1501.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 9394 strings out of 493312
- 138187 string characters out of 3128523
- 348772 words of memory out of 3000000
- 12754 multiletter control sequences out of 15000+200000
+ 9493 strings out of 493312
+ 139544 string characters out of 3128523
+ 350517 words of memory out of 3000000
+ 12847 multiletter control sequences out of 15000+200000
  15976 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,5n,36p,1363b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,8n,36p,1363b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecti0900.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\
@@ -703,9 +728,9 @@ ppen\ec\dpi600\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (11 pages, 370585 bytes).
+Output written on Niko_Benkler_Proseminar.pdf (11 pages, 372171 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

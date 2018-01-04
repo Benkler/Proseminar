@@ -24,6 +24,7 @@
 
 \usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage{tabularx}
 
 
 
@@ -178,7 +179,14 @@ A/B Testing is similar to canary release. It requires a bigger user base, as the
 \\
 Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show to the user. 
 
+\subsection{A comparison between traditional deployment and the CD process}
 
+\begin{tabular}{p{2cm}|p{5cm}|p{5cm}|}
+\hline
+  & Traditional deployment & Continuous Practices \\
+ \hline
+ Frequency of deployment & Every 1-6 month & Daily
+\end{tabular}
 
 \newpage
 
