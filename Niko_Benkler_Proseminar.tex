@@ -31,7 +31,7 @@
 
 \mainmatter
 %TODO Titel ändern?????
-\title{Deployment Strategies in CI/CD Pipelines}
+\title{Deployment strategies and practices in CI/CD Pipelines}
 \titlerunning{Deployment Strategies in CI/CD Pipelines}
 \author{Niko Benkler }
 \authorrunning{Model-driven Software Quality Engineering}
@@ -42,10 +42,10 @@
 \begin{abstract} 
  	In the last decade, software development experienced a huge transition. Since agile methodologies were introduces in the early 2000, software development became faster and faster. Today, another software development process is emerging: Continuous Software Engineering (CSE). CSE, especially Continuous Integration(CI), Continuous Delivery(CDE) and Continuous Deployment(CD) receive more and more attention in organizations such as Facebook, Paddy Power and Atlassian but also in small start-up companies. 
  	It enables them to e.g. deliver software more frequently, reduce time-to-market, obtain customer feedback faster, build the right product or to improve product quality. 
- 	Therefore, this seminar paper presents the current state of the art concerning Continuous Practices, compares the traditional deployment strategies with the new CSE practices and proposes some tools, that can be used in a CI/CD Pipeline to support CSE. 
+ 	Therefore, this seminar paper presents the current state of the art concerning Continuous Practices, compares the traditional deployment strategies with the new CSE practices and proposes some tools, that can be used in a CI/CD Pipeline to support CSE. But also, it reveals the barriers an organization has to face while adopting Continuous Practices. CSE not only turns up with benefits, it also has negative side effects such as a time consuming and costly implementation or an increasing mental stress for development team members.
  	% TODO: da fehlt noch was 10 scientific paper and a book were studied, in order to cover 
- 	\\
- 	\\
+    \\
+    
  	\textbf{Keywords - }Agile, continuous software development, continuous integration, continuous delivery, continuous deployment, DevOps, CI/CD Pipeline
  	 
 	
@@ -60,14 +60,15 @@
 Today, the software development process has to face many difficult demands. Fast-changing and unpredictable markets, changing customer requirements \cite{claps2015journey} and rapidly advancing information technologies \cite{olsson2012climbing} require a faster process of software development. 
 To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey}. Therefore, releasing software becomes even faster. 
 \\
-This seminar paper presents an evolution path, called 'stairway to heaven' \cite{olsson2012climbing}, which describes a possible transition from traditional development towards CD. 
+This seminar paper presents a possible evolution path, referenced as 'stairway to heaven' \cite{olsson2012climbing}, which describes a transition from traditional development towards CD. 
 As the core of CDE is a deployment pipeline \cite{schermann2016empirical}, the paper also presents its usual phases and the possible tools, that support each phase.
 Nevertheless, studying several papers revealed, that CDE not only comes with benefits, but also with huge social and technical challenges \cite{claps2015journey}. The paper clarifies them and proposes some mitigation strategies. 
 %TODO  Stimmt der remainder noch???
-The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing}. That section is followed by the explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that is caused by CDE and possible mitigation strategies. Finally, I present my conclusion in section VI.
+The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by the explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that are caused by CDE and possible mitigation strategies. Finally, I present my conclusion in section VI.
 
 \section{Background}
-Here, I give an overview of the most important keywords. Those keywords are necessary to understand the content of the seminar paper. When studying the given information about Continuous Software Engineering (CSE), one could clearly see that there are no universally accepted definitions \cite{schermann2016empirical}. Therefore, the following subsections provide the definitions as they are used in this seminar paper.
+Here, I give an overview of the most important keywords. Those keywords are necessary to understand the content of the seminar paper. When studying the given information about Continuous Software Engineering (CSE), one could clearly see that, there are no universally accepted definitions \cite{schermann2016empirical}. Terms like CDE and CD are sometimes used interchangeable, albeit the is a small but relevant difference \cite{shahin2017continuous}.
+Therefore, the following subsections provide the definitions as they are used in this seminar paper.
 
 \subsection{Agile Methodologies}
 Agile software development is based on "iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams" \cite{taheritanjani2016comparison}. It encourages adaptive planning, early delivery and continuous improvement.
@@ -88,7 +89,7 @@ However, agile software development 'only' allows frequent software releases but
 \noindent Especially the fourth category shows the close connection between DevOps practices and continuous practices.
 
 \subsection{Continuous software engineering}
-Continuous software engineering \textbf{(CES)} is a practice that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{Fig RelCSE} demonstrates the relationship between CI, CDE and CD.
+Continuous software engineering \textbf{(CES)} is a practice that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
 
 \subsubsection{Continuous Integration}
 Continuous Integration \textbf{(CI)} is a CSE practice, in which developers integrate and merge their work into a shared repository very frequently, for example multiple times a day \cite{shahin2017continuous} \cite{schermann2016empirical}. Also,  automated builds and test permit to discover integration errors as fast as possible. CI improves  the effectiveness of a team as much as the software quality \cite{shahin2017continuous}. In other words, CI ensures, that the software is always in a ready to deploy state \cite{claps2015journey}.
@@ -99,7 +100,7 @@ A brief definition of Continuous Delivery \textbf{(CDE)} is given in \cite{laukk
 Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, such as a less risky release process \cite{laukkanen2016bottom} due to automation or the ability to learn from real usage data \cite{olsson2012climbing}. As a result, the software developers can decide, whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manually. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
 
 \subsubsection{Continuous Deployment}
-An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
+An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD and CDE practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
 Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
 Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section 5 %TODO stimmt die section!
 
@@ -110,6 +111,10 @@ Due to barriers such as "lack of automated (user) acceptance tests", "deployment
 	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
 \end{figure}
 
+\section{From traditional development to Continous Deployment}
+
+%Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process.
+In this section, I will describe a possible transition
 
 
 \bibliographystyle{itmalpha}
