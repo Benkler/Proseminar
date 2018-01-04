@@ -7,9 +7,10 @@
 \contentsline {subsection}{\numberline {2.1}Agile Methodologies}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {2.2}DevOps}{4}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {2.3}Continuous software engineering}{4}{subsection.1.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Continuous Integration}{4}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1}Continuous Integration}{5}{subsubsection.1.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Continuous Delivery}{5}{subsubsection.1.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Continuous Deployment}{5}{subsubsection.1.2.3.3}
 \contentsline {section}{\numberline {3}The evolution path towards Continuous Deployment}{6}{section.1.3}
 \contentsline {subsection}{\numberline {3.1}Phase 1: Traditional Development}{6}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {3.2}Phase 2: Agile Organization}{7}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {3.3}Phase 3: Continuous Integration}{7}{subsection.1.3.3}

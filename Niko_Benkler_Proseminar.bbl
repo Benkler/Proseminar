@@ -7,6 +7,11 @@ Len Bass, Ingo Weber und Liming Zhu.
 \newblock Addison-Wesley Professional.
 \newblock 2015.
 
+\bibitem[Chen15]{chen2015continuous}
+Lianping Chen.
+\newblock Continuous delivery: Huge benefits, but challenges too.
+\newblock {\em IEEE Software}, 32(2), 2015, S.~50--54.
+
 \bibitem[ClSA15]{claps2015journey}
 Gerry~Gerard Claps, Richard~Berntsson Svensson und Ayb{\"u}ke Aurum.
 \newblock On the journey to continuous deployment: Technical and social

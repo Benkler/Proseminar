@@ -91,6 +91,13 @@ However, agile software development 'only' allows frequent software releases but
 \subsection{Continuous software engineering}
 Continuous software engineering \textbf{(CES)} is a practice that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
 
+\begin{figure}[h]
+	\hspace*{-2cm} 
+	\includegraphics[height=4.5cm]{RelCSE}  
+	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
+\end{figure}
+\newpage
+
 \subsubsection{Continuous Integration}
 Continuous Integration \textbf{(CI)} is a CSE practice, in which developers integrate and merge their work into a shared repository very frequently, for example multiple times a day \cite{shahin2017continuous} \cite{schermann2016empirical}. Also,  automated builds and test permit to discover integration errors as fast as possible. CI improves  the effectiveness of a team as much as the software quality \cite{shahin2017continuous}. In other words, CI ensures, that the software is always in a ready to deploy state \cite{claps2015journey}.
 
@@ -99,17 +106,18 @@ Continuous Integration \textbf{(CI)} is a CSE practice, in which developers inte
 A brief definition of Continuous Delivery \textbf{(CDE)} is given in \cite{laukkanen2016bottom}: "Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time." 
 Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, such as a less risky release process \cite{laukkanen2016bottom} due to automation or the ability to learn from real usage data \cite{olsson2012climbing}. As a result, the software developers can decide, whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manually. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
 
-\begin{figure}[b]
-	\hspace*{-2cm} 
-	\includegraphics[height=4.5cm]{RelCSE}  
-	\caption{\label{RelCSE}The relationship between CI, CDE, CD \cite{shahin2017continuous}} 
-\end{figure}
+
 
 \subsubsection{Continuous Deployment}
-An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD and CDE practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
+An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), on times a day (nightly build) or several times a week (weekend builds). Fig. \ref{CDBenefits}  provides a quick overview of CDE's and consequently CD's benefits. CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD and CDE practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section 4. %TODO stimmt das mit der section? Auch nächste Zeile
 Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
 Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section 5 %TODO stimmt die section!
 
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[height=4.5cm]{CDBenefits}  
+ 	\caption{\label{CDBenefits}CD's and CDE's Benefits \cite{chen2015continuous}} 
+ \end{figure}
 
 
 
@@ -132,7 +140,9 @@ Traditional deployment is a software development approach, that is characterized
 A brief introduction in Agile Methodologies is given in \ref{background}. Here, agile methodologies are already put into practice, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
 To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams work on complete features which supports iterative development an as a consequence, improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it is passes all required test, they merge it into the main project. 
 \\ 
-The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI.   
+The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI. 
+
+\subsection{Phase 3: Continuous Integration}  
 
 
 
