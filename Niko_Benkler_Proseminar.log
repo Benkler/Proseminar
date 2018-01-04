@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  4 JAN 2018 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  4 JAN 2018 18:25
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -615,7 +615,7 @@ re-quire-ments [[]]
 [3
 
 ]
-<RelCSE.jpg, id=149, 920.68968pt x 272.51813pt>
+<RelCSE.jpg, id=154, 920.68968pt x 272.51813pt>
 File: RelCSE.jpg Graphic file (type jpg)
 <use RelCSE.jpg>
 Package pdftex.def Info: RelCSE.jpg  used on input line 96. on input line 96.
@@ -636,49 +636,52 @@ i-ni-tion of Con-tin-u-ous De-liv-ery \T1/cmr/bx/n/10 (CDE)
  []
 
 [5 <./RelCSE.jpg>]
-<CDBenefits.jpg, id=194, 187.45032pt x 153.57375pt>
+<CDBenefits.jpg, id=199, 187.45032pt x 153.57375pt>
 File: CDBenefits.jpg Graphic file (type jpg)
 <use CDBenefits.jpg>
 Package pdftex.def Info: CDBenefits.jpg  used on input line 118. on input line 
 118.
 Package pdftex.def Info: Requested size: 156.29019pt x 128.0374pt on input line
  118.
-<Stairway.jpg, id=204, 583.42969pt x 139.27031pt>
+
+Overfull \hbox (3.93127pt too wide) in paragraph at lines 131--134
+\T1/cmr/m/n/10 The main ideas within this sec-tion come from [[]], [[]] and [[]
+].
+ []
+
+<Stairway.jpg, id=216, 583.42969pt x 139.27031pt>
 File: Stairway.jpg Graphic file (type jpg)
 <use Stairway.jpg>
-Package pdftex.def Info: Stairway.jpg  used on input line 135. on input line 13
-5.
+Package pdftex.def Info: Stairway.jpg  used on input line 137. on input line 13
+7.
 Package pdftex.def Info: Requested size: 476.78629pt x 113.81102pt on input lin
-e 135.
+e 137.
 
-Overfull \hbox (74.8123pt too wide) in paragraph at lines 134--136
+Overfull \hbox (74.8123pt too wide) in paragraph at lines 136--138
 []|  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [6 <./CDBenefits.jpg>] [7 <./Stairway.jpg>] [8] (Niko_Benkler_Proseminar.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (Niko_Benkler_Proseminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
-(rerunfilecheck)             Checksum: 7865BC790E0BA9A9FF15B23DD567A84F;1186.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
+(rerunfilecheck)             Checksum: 6E545B0023554C57104235A2CC91E68B;1271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 9381 strings out of 493312
- 137956 string characters out of 3128523
- 349680 words of memory out of 3000000
- 12747 multiletter control sequences out of 15000+200000
+ 9383 strings out of 493312
+ 138000 string characters out of 3128523
+ 346680 words of memory out of 3000000
+ 12748 multiletter control sequences out of 15000+200000
  15976 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,5n,36p,1360b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,5n,36p,1360b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecti0900.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\
@@ -692,9 +695,9 @@ ppen\ec\dpi600\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (9 pages, 293392 bytes).
+Output written on Niko_Benkler_Proseminar.pdf (9 pages, 296040 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
