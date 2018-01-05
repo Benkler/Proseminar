@@ -214,7 +214,13 @@ The following table compares the development and deployment of the traditional, 
 \end{tabular}
 \end{table}
 
-
+\section{Deployment Pipeline and Tools}
+A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build, test, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrate, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
+\\
+Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They are able to fix it and (generally) start the pipeline again by committing the changes. 
+\\
+Thus, the engineering process of a pipeline,the software's architecture, the degree of automation or the available tools generate some serious challenges. They are discussed in Section V.
+ 
 
 \newpage
 
