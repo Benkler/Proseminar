@@ -220,7 +220,16 @@ A Deployment Pipeline is considered to be the core of the CSE process. It enable
 Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They are able to fix it and (generally) start the pipeline again by committing the changes. 
 \\
 Thus, the engineering process of a pipeline,the software's architecture, the degree of automation or the available tools generate some serious challenges. They are discussed in Section V.
- 
+
+\subsection{Example: A deployment pipeline} 
+The example pipeline is divided in 7 stages: 1. version control system, 2. code management and analysis, 3. build system, 4. continuous integration server, 5. testing, 6. configuration and provisioning, 7. continuous delivery/deployment server
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=1.2cm]{pipeline}  
+	\caption{\label{pipeline}Deployment Pipeline based on \cite{shahin2017continuous} } 
+\end{figure}
+
 
 \newpage
 
