@@ -222,13 +222,26 @@ Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from
 Thus, the engineering process of a pipeline,the software's architecture, the degree of automation or the available tools generate some serious challenges. They are discussed in Section V.
 
 \subsection{Example: A deployment pipeline} 
-The example pipeline is divided in 7 stages: 1. version control system, 2. code management and analysis, 3. build system, 4. continuous integration server, 5. testing, 6. configuration and provisioning, 7. continuous delivery/deployment server
+The example pipeline is divided in 7 stages: 1. version control system, 2. code management and analysis, 3. build system, 4. continuous integration server, 5. testing, 6. configuration and provisioning, 7. continuous delivery/deployment server \cite{shahin2017continuous}.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=1.2cm]{pipeline}  
 	\caption{\label{pipeline}Deployment Pipeline based on \cite{shahin2017continuous} } 
 \end{figure}
+
+\subsubsection{Version Control System}
+The Version Control System manages the continuous code pushing to the repository. It tracks files to create a history about the development process. The most popular ones are GitHub and Subversion. GitHub Issues as Issue Tracking software can be integrated here as well. \cite{taheritanjani2016comparison}.
+\subsubsection{Code Management and Analysis}
+Code Management and Analysis tools check the code concerning static quality metrics. Those can be: code and test coverage, coding standards like comments or alignment or duplicated code. SonarQube is on of the most popular tools, as it can be fully integrated in CI environment \cite{shahin2017continuous}.
+\subsubsection{Build System}
+Build tools simplify the build process. They compile the source code automatically into binary code and packages. Popular Tools are Apache Maven or Ant.
+\subsubsection{CI Server}
+The CI server observes the code repository. According to the respective build policy, it triggers the Build System and runs the tests whenever a change is committed. Bamboo, Jenkins and Travis CI are the most common CI Server tools.
+\subsubsection{Testing}
+\subsubsection{Configuration and Provisioning}
+\subsubsection{CD Server}
+
 
 
 \newpage
