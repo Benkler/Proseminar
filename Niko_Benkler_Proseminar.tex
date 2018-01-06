@@ -289,42 +289,13 @@ The same source identifies the lack of experience and skill as another challenge
 
 
 \subsection{Technical Challenges}
-- \cite{shahin2017continuous}
-- some domains do not allow to truly implement CD, embedded systems, telecommunication/medical systems safety critical systems
+The variety of available tools to implement Continuous Practices is problematic. Especially test tools for user acceptance test are either non-existent or hardly capable of being integrated into an automated pipeline \cite{shahin2017beyond}. Besides, manual quality checks are sometimes unavoidable. A fully automated testing infrastructure still is one of the main challenge to achieve full automation \cite{laukkanen2016bottom}.
+\\
+As there are no "out of the box" solutions, companies have to design and implement their own CD pipeline. A "no downtime policy" requires proper hardware, as seamless upgrades are necessary. It is simply not possible, to shut down the system, every time a new version is deployed. This is not just time consuming but connected to a high investment which discourages companies to do CSE \cite{chen2015continuous}.  \cite{shahin2017continuous} reports that security issues in pipeline still remain a big challenge. 
+It has to be noted, that some domains do not allow to truly implement CD. E.g. embedded systems, telecommunication systems, medical and other safety critical systems.
 
-\cite{chen2015continuous}
-- no out of the box solution, own solution => costl
 
-\cite{claps2015journey}
-- Infrastructure requires proper hardware
-- seamless upgrade (no downtime) => use two parallel running systems
-- bugs are mroe likely to slip through process => outweigthed by CD, fixing b ugs quickly
 
-\cite{laukkanen2016bottom}
--unstable slow tests, insufficients testing environments
-- multiple braches need own hardware ressource (pipeline for each branch)
-
-\cite{olsson2012climbing}
--variety of available test tools is problematic /main issue"!""""!!! => fully automated testing infrastructure needs to be implemented
-- lack of transpareny => full develloper awareness
--different network confuguration at customer site
-
-\cite{shahin2017beyond}
-- lack of fully automated user acceptance test because a) too much effort with low gain, b) tool limitations, c)lack of automation skill
-- maual quality tasks such as quality checks are sometime unavoidabel
-- lack of efficient rollback mechanism
-
-\cite{shahin2017continuous}  
-- lack of proper test stratey, poor test quality, =>cross-team testing,, test-driven-development
-- merging confilcts => branching strategies, Trunk 
-
-\cite{laukkanen2016bottom}
-- stage gate process hinder adoption of CD, tight schedules, process overheads because of gate requirements, 
--lack of time to introduce CD
-- lack of testing strategy causes duplicate testing--> slow pipeline
-
-\cite{shahin2017continuous}
-- security issues in pipeline
 
 
 \subsection{Social Challenges}
