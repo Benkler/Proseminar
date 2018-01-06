@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {title}{Deployment strategies and practices in CI/CD Pipelines}{1}{chapter.1}
+\contentsline {title}{From Tradtitional Development to Continuous Deployment: Strategies and practices in CI/CD Pipelines}{1}{chapter.1}
 \authcount {1}
 \contentsline {author}{Niko Benkler }{1}{chapter.1}
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  5 JAN 2018 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  6 JAN 2018 08:17
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -636,7 +636,7 @@ re-quire-ments [[]]
 [3
 
 ]
-<RelCSE.jpg, id=210, 920.68968pt x 272.51813pt>
+<RelCSE.jpg, id=211, 920.68968pt x 272.51813pt>
 File: RelCSE.jpg Graphic file (type jpg)
 <use RelCSE.jpg>
 Package pdftex.def Info: RelCSE.jpg  used on input line 100. on input line 100.
@@ -658,7 +658,7 @@ i-ni-tion of Con-tin-u-ous De-liv-ery \T1/cmr/bx/n/10 (CDE)
  []
 
 [5 <./RelCSE.jpg>]
-<CDBenefits.jpg, id=255, 187.45032pt x 153.57375pt>
+<CDBenefits.jpg, id=256, 187.45032pt x 153.57375pt>
 File: CDBenefits.jpg Graphic file (type jpg)
 <use CDBenefits.jpg>
 Package pdftex.def Info: CDBenefits.jpg  used on input line 122. on input line 
@@ -671,7 +671,7 @@ Overfull \hbox (3.93127pt too wide) in paragraph at lines 137--139
 ].
  []
 
-<Stairway.jpg, id=272, 583.42969pt x 139.27031pt>
+<Stairway.jpg, id=273, 583.42969pt x 139.27031pt>
 File: Stairway.jpg Graphic file (type jpg)
 <use Stairway.jpg>
 Package pdftex.def Info: Stairway.jpg  used on input line 142. on input line 14
@@ -684,7 +684,7 @@ Overfull \hbox (74.8123pt too wide) in paragraph at lines 141--143
  []
 
 [6 <./CDBenefits.jpg>] [7 <./Stairway.jpg>] [8]
-<teamstructure.jpg, id=326, 493.0922pt x 277.78781pt>
+<teamstructure.jpg, id=327, 493.0922pt x 277.78781pt>
 File: teamstructure.jpg Graphic file (type jpg)
 <use teamstructure.jpg>
 Package pdftex.def Info: teamstructure.jpg  used on input line 170. on input li
@@ -702,7 +702,7 @@ Overfull \hbox (7.50943pt too wide) in paragraph at lines 191--215
  []
 
 [10]
-<pipeline.jpg, id=358, 569.87906pt x 55.70813pt>
+<pipeline.jpg, id=361, 569.87906pt x 55.70813pt>
 File: pipeline.jpg Graphic file (type jpg)
 <use pipeline.jpg>
 Package pdftex.def Info: pipeline.jpg  used on input line 229. on input line 22
@@ -724,7 +724,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
-(rerunfilecheck)             Checksum: 991DF06F7182AA4E7E21D638D5B155E0;2255.
+(rerunfilecheck)             Checksum: AF32A66060F5F019754BFCBF6278B421;2300.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
  ) 
 Here is how much of TeX's memory you used:
@@ -748,9 +748,9 @@ ppen\ec\dpi600\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (13 pages, 407519 bytes).
+Output written on Niko_Benkler_Proseminar.pdf (13 pages, 409851 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
+ 771 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
  242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

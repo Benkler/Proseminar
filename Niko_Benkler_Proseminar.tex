@@ -34,7 +34,7 @@
 
 \mainmatter
 %TODO Titel ändern?????
-\title{Deployment strategies and practices in CI/CD Pipelines}
+\title{From Tradtitional Development to Continuous Deployment: Strategies and practices in CI/CD Pipelines}
 \titlerunning{Deployment Strategies in CI/CD Pipelines}
 \author{Niko Benkler }
 \authorrunning{Model-driven Software Quality Engineering}
@@ -184,7 +184,7 @@ A/B Testing is similar to canary release. It requires a bigger user base, as the
 Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show to the user. 
 
 \subsection{A comparison between traditional development, agile development and the CD process}
-The following table compares the development and deployment of the traditional, agile and CD process.
+The following table compares the development and deployment of the traditional, agile and CD process based on \cite{claps2015journey}.
 
 \begin{table}
 	
@@ -193,7 +193,7 @@ The following table compares the development and deployment of the traditional, 
 \hline
   & Traditional development & Agile development & Continuous Practices \\
  \hline
- Team size & Big Teams, a few dozen & Small teams, 2-8 people & Small teams, 2-8 people \\
+ Team size & Big Teams, a few dozen poeple & Small teams, 2-8 people & Small teams, 2-8 people \\
   \hline
  Team competence & Divided in discipline  & Cross-functional teams & Cross-functional teams and new roles\\
   \hline
@@ -201,11 +201,11 @@ The following table compares the development and deployment of the traditional, 
   \hline
  Testing & Explicit testing at the end of the project   & Testing at the end of each cycle & (Semi-)automated tests with every pipeline run  \\
   \hline
- Architecture & 3-Layer, monolith, strong dependencies between modules & 3-Layer or Microservices, less dependencies & Desire: almost no dependencies, independent deployability of modules    \\
+ Architecture & 3-Layer, monolithic, strong dependencies between modules & 3-Layer or Microservices, less dependencies & Desire: almost no dependencies, independent deployability of modules    \\
   \hline
  Frequency of deployment & Once waterfall process finished (months, year) & Weekly & Daily  \\
   \hline
- Relative risk of deployment & High: no automation, infrequent process, huge amount of code & Still High: no automation but frequent process  &Low: automation, small amount of changes \\
+ Relative risk of deployment & High: no automation, infrequent process, huge amount of code & Still High: no automation but frequent process  &Low: automation, small amount of changes, only few dependencies \\
   \hline
  Customer/developer feedback loop & Long due to infrequent deployments & Depends on the deployment frequency &Very short, customers constantly give feedback\\
   \hline
@@ -215,9 +215,9 @@ The following table compares the development and deployment of the traditional, 
 \end{table}
 
 \section{Deployment Pipeline and Tools}
-A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build, test, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrate, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
+A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build process, testing, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrate, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
 \\
-Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They are able to fix it and (generally) start the pipeline again by committing the changes. 
+Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They are able to fix it and start the pipeline again by committing the changes. 
 \\
 Thus, the engineering process of a pipeline,the software's architecture, the degree of automation or the available tools generate some serious challenges. They are discussed in Section V.
 
@@ -231,9 +231,9 @@ The example pipeline is divided in 7 stages: 1. version control system, 2. code 
 \end{figure}
 
 \subsubsection{Version Control System}
-The Version Control System manages the continuous code pushing to the repository. It tracks files to create a history about the development process. The most popular ones are GitHub and Subversion. GitHub Issues as Issue Tracking software can be integrated here as well. \cite{taheritanjani2016comparison}.
+The Version Control System manages the continuous code pushing to the repository. It tracks files to create a history of the development process. The most popular ones are GitHub and Subversion. GitHub Issues as Issue Tracking software can be integrated here as well. \cite{taheritanjani2016comparison}.
 \subsubsection{Code Management and Analysis}
-Code Management and Analysis tools check the code concerning static quality metrics. Those can be: code and test coverage, coding standards like comments or alignment or duplicated code. SonarQube is on of the most popular tools, as it can be fully integrated in CI environment \cite{shahin2017continuous}.
+Code Management and Analysis tools check the code concerning static quality metrics. Those can be: code and test coverage, coding standards like comments, alignment or duplicated code. SonarQube is on of the most popular tools, as it can be fully integrated in CI environment \cite{shahin2017continuous}.
 \subsubsection{Build System}
 Build tools simplify the build process. They compile the source code automatically into binary code and packages. Popular Tools are Apache Maven or Ant.
 \subsubsection{CI Server}
