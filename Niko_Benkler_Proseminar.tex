@@ -310,17 +310,8 @@ At customer site, demotivated  clients make it difficult to introduce Continuous
 
 
 \subsection{Architectural Challenges }
-\cite{chen2015continuous}
-- large, monolithic apps => redesign, but costly \cite{schermann2016empirical}
-
-
-\cite{shahin2016intersection}
-- highly coupled monolitic architecure hav cross functional dependencies which need to be managed in pipeline => vey diffivult
-- monolith database undeployable unit =>aplitting into smaller and less complex databases
-=> small independent deployment units MIccroservice, vetical layering
-=> do not focus on reusability as this creates dependencies / bottleneck
-=> testability inside the architecture. Test services stand-alone
-
+Large, monolithic applications are rarely compatible with Continuous Practices \cite{chen2015continuous}. Their highly coupled architecture implies cross-functional dependencies which need to be managed in the pipeline. The bigger the application, the higher the complexity that has to be managed within the pipeline. Testing single modules is quite often not possible and monolithic databases become undeployable units. 
+To address these challenges, a redesign is necessary \cite{shahin2016intersection}. Splitting the application (including the database) into small deployable  units, vertical layering or the use of  Microservices is necessary. Nevertheless, this is a costly undertaking that often prevents organizations to move software to CD \cite{chen2015towards}.
 
 
 
