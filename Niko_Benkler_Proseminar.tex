@@ -270,38 +270,28 @@ Fig.\ref{Tools} provides some tools and divides them into the stages they belong
 \newpage
 
 \section{Challenges for Adopting Continuous Practices}
-Bla bla wie gut, benefits
+"Continuous Delivery: Huge Benefits, but Challenges Too" \cite{chen2015continuous}. This is how Lianping Chen, a software developer of a company called Paddy Power, names his paper. He describes how they (Paddy Power) adopted Continuous Practices, reporting "huge benefits and challenges involved".
+\\
+While studying several papers about Continuous Practices in general, it was remarkable how many of them reported about the challenges of adopting CI,CDE or CD. 
+Currently, there is little research done on how to better introduce them \cite{chen2015continuous}.  As a consequence, "out of the box" solutions are mostly not available.
+\\
+The following sections are divided in the different kinds of challenges a software development organization may has to face when adopting Continuous Practices
+Those are: Organizational, technical, social and architectural challenges. If available, mitigation strategies are provided as well.
+
 
 \subsection{Organizational Challenges}
+Almost every source identifies the breakdown of barriers among the teams as on of the most important organizational challenge. For successfully adopting Continuous Practices, transparency, coordination and a closer collaboration between development teams, operational staff and management has to be established. Team restructuring and the definition of new roles are common mitigation practices \cite{chen2015continuous}. To establish more transparency, full developer awareness is required, as mentioned in Section II.
+\\
+Having separated development and operation staff causes a very slow failure recovery \cite{shahin2016intersection}. The introduction of DevOps practices reduces the time between failure discovery and bug fix according to the principle: "You build it, you run it" \cite{shahin2016intersection}. 
+Deployment is a business decision. In Some organizations, only management or financial operators are in charge of the release decision. Asking for permission to release can be a lengthy process, which is obviously contrary to the idea of CD \cite{shahin2017beyond}.
+The same source identifies the lack of experience and skill as another challenge. Using pilot teams, formal training and workshops is a counteracting strategy.
 
-\cite{chen2015continuous}
-- ream restructure to break down barriers among teams, 
-- to litte research done on how to introduce cd
-
-\cite{laukkanen2016bottom}
-- gloval distribution of the organization
-
-\cite{shahin2016intersection}
-- slow failure recovery
-=> You build it, you run it  oder Platzieren der OPS im Büro neben Devs
-=> engage ops staff in decision making process at early stage
-
-\cite{shahin2017beyond}
-- deployment as business decision which has to be done by management or finacial sectos => give devellopers the authority
-
-
-
-\subsection{Process challenges}
-\cite{laukkanen2016bottom}
-- stage gate process hinder adoption of CD, tight schedules, process overheads because of gate requirements, 
--lack of time to introduce CD
-- lack of testing strategy causes duplicate testing--> slow pipeline
-
-\cite{shahin2017continuous}
-- security issues in pipeline
 
 
 \subsection{Technical Challenges}
+- \cite{shahin2017continuous}
+- some domains do not allow to truly implement CD, embedded systems, telecommunication/medical systems safety critical systems
+
 \cite{chen2015continuous}
 - no out of the box solution, own solution => costl
 
@@ -324,6 +314,17 @@ Bla bla wie gut, benefits
 - maual quality tasks such as quality checks are sometime unavoidabel
 - lack of efficient rollback mechanism
 
+\cite{shahin2017continuous}  
+- lack of proper test stratey, poor test quality, =>cross-team testing,, test-driven-development
+- merging confilcts => branching strategies, Trunk 
+
+\cite{laukkanen2016bottom}
+- stage gate process hinder adoption of CD, tight schedules, process overheads because of gate requirements, 
+-lack of time to introduce CD
+- lack of testing strategy causes duplicate testing--> slow pipeline
+
+\cite{shahin2017continuous}
+- security issues in pipeline
 
 
 \subsection{Social Challenges}
@@ -354,6 +355,9 @@ Bla bla wie gut, benefits
 => small independent deployment units MIccroservice, vetical layering
 => do not focus on reusability as this creates dependencies / bottleneck
 => testability inside the architecture. Test services stand-alone
+
+
+
 
 \newpage
 
