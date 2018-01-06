@@ -239,7 +239,18 @@ Build tools simplify the build process. They compile the source code automatical
 \subsubsection{CI Server}
 The CI server observes the code repository. According to the respective build policy, it triggers the Build System and runs the tests whenever a change is committed. Bamboo, Jenkins and Travis CI are the most common CI Server tools.
 \subsubsection{Testing}
+Testing is the key aspect to guarantee high qualitative software. This leads in various different kinds of tests: Unit tests, regression tests, (user) acceptance tests, integration test or performance tests.
+\\
+JUnit is a common tool to run unit tests. To store the results of acceptance tests, \cite{shahin2017continuous} proposes the test management framework TestLink. Besides, the CRTS(Continuous Regression Test Selection) and CTSP(Continuous Test Suite Prioritization) approaches intend to support effective regression test within the CI server environment. The combination  of CUTS and CruiseControl (CI Server tool) is used to continuously run system integration tests.
+
+
+%TODO: wohin damit?Albeit developers already succeeded in automating unit and integration tests, the automation of (user) acceptance tests and performance tests remains a big challenge.
+
+
+
 \subsubsection{Configuration and Provisioning}
+Automation of configuration and provisioning of servers, test environments, virtual machines or the entire infrastructure is an innovation in deployment pipelines \cite{shahin2017continuous}. Usually, a vast amount of time is needed to set up those environments \cite{chen2015towards}. This justifies that new approach, albeit there a currently not that many tools available. 
+
 \subsubsection{CD Server}
 
 

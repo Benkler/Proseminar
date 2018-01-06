@@ -7,10 +7,16 @@ Len Bass, Ingo Weber und Liming Zhu.
 \newblock Addison-Wesley Professional.
 \newblock 2015.
 
-\bibitem[Chen15]{chen2015continuous}
+\bibitem[Chen15a]{chen2015continuous}
 Lianping Chen.
 \newblock Continuous delivery: Huge benefits, but challenges too.
 \newblock {\em IEEE Software}, 32(2), 2015, S.~50--54.
+
+\bibitem[Chen15b]{chen2015towards}
+Lianping Chen.
+\newblock Towards architecting for continuous delivery.
+\newblock In {\em Software Architecture (WICSA), 2015 12th Working IEEE/IFIP
+  Conference on}. IEEE, 2015, S.~131--134.
 
 \bibitem[ClSA15]{claps2015journey}
 Gerry~Gerard Claps, Richard~Berntsson Svensson und Ayb{\"u}ke Aurum.
