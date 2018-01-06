@@ -67,7 +67,7 @@ This seminar paper presents a possible evolution path, referenced as 'stairway t
 As the core of CDE is a deployment pipeline \cite{schermann2016empirical}, the paper also presents its usual phases and the possible tools, that support each phase.
 Nevertheless, studying several papers revealed, that CDE not only comes with benefits, but also with huge social and technical challenges \cite{claps2015journey}. The paper clarifies them and proposes some mitigation strategies. 
 %TODO  Stimmt der remainder noch???
-The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by an explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that are caused by CDE and possible mitigation strategies. Finally, I present my conclusion in section VI.
+The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by an explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that are caused by CDE. Finally, I present my conclusion in section VI.
 
 \section{Background} \label{background}
 Here, I give an overview of the most important keywords. Those keywords are necessary to understand the content of the seminar paper. When studying the currently available information about Continuous Software Engineering (CSE), one could clearly see that there are no universally accepted definitions \cite{schermann2016empirical}. Terms like CDE and CD are sometimes used interchangeable, albeit the is a small but relevant difference \cite{shahin2017continuous}.
@@ -269,8 +269,91 @@ Fig.\ref{Tools} provides some tools and divides them into the stages they belong
 
 \newpage
 
-\section{Challenges and Barriers of Continuous Practices}
-hbtrbtr
+\section{Challenges for Adopting Continuous Practices}
+Bla bla wie gut, benefits
+
+\subsection{Organizational Challenges}
+
+\cite{chen2015continuous}
+- ream restructure to break down barriers among teams, 
+- to litte research done on how to introduce cd
+
+\cite{laukkanen2016bottom}
+- gloval distribution of the organization
+
+\cite{shahin2016intersection}
+- slow failure recovery
+=> You build it, you run it  oder Platzieren der OPS im Büro neben Devs
+=> engage ops staff in decision making process at early stage
+
+\cite{shahin2017beyond}
+- deployment as business decision which has to be done by management or finacial sectos => give devellopers the authority
+
+
+
+\subsection{Process challenges}
+\cite{laukkanen2016bottom}
+- stage gate process hinder adoption of CD, tight schedules, process overheads because of gate requirements, 
+-lack of time to introduce CD
+- lack of testing strategy causes duplicate testing--> slow pipeline
+
+\cite{shahin2017continuous}
+- security issues in pipeline
+
+
+\subsection{Technical Challenges}
+\cite{chen2015continuous}
+- no out of the box solution, own solution => costl
+
+\cite{claps2015journey}
+- Infrastructure requires proper hardware
+- seamless upgrade (no downtime) => use two parallel running systems
+- bugs are mroe likely to slip through process => outweigthed by CD, fixing b ugs quickly
+
+\cite{laukkanen2016bottom}
+-unstable slow tests, insufficients testing environments
+- multiple braches need own hardware ressource (pipeline for each branch)
+
+\cite{olsson2012climbing}
+-variety of available test tools is problematic /main issue"!""""!!! => fully automated testing infrastructure needs to be implemented
+- lack of transpareny => full develloper awareness
+-different network confuguration at customer site
+
+\cite{shahin2017beyond}
+- lack of fully automated user acceptance test because a) too much effort with low gain, b) tool limitations, c)lack of automation skill
+- maual quality tasks such as quality checks are sometime unavoidabel
+- lack of efficient rollback mechanism
+
+
+
+\subsection{Social Challenges}
+\cite{chen2015continuous}
+- resistance to change
+\cite{laukkanen2016bottom}
+- no trust in build and test results (confidence)
+
+\cite{claps2015journey}
+- pressure for developper, code always need to be ready to deploy => improve communication
+- lack of moticvation => ensure top managers are pushing
+- team coordination requires extra effort => outhwigted by benefits(pruductivity steigerung
+
+\cite{shahin2017beyond}
+- demotivated customer, they need to be involved, this is work and cost => present benefits
+
+
+
+
+\subsection{Architectural Challenges }
+\cite{chen2015continuous}
+- large, monolithic apps => redesign, but costly \cite{schermann2016empirical}
+
+
+\cite{shahin2016intersection}
+- highly coupled monolitic architecure hav cross functional dependencies which need to be managed in pipeline => vey diffivult
+- monolith database undeployable unit =>aplitting into smaller and less complex databases
+=> small independent deployment units MIccroservice, vetical layering
+=> do not focus on reusability as this creates dependencies / bottleneck
+=> testability inside the architecture. Test services stand-alone
 
 \newpage
 
