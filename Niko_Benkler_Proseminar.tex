@@ -128,16 +128,17 @@ Due to barriers such as "lack of automated (user) acceptance tests", "deployment
 
 
 \section{The evolution path towards Continuous Deployment}
-This section describes the transition from traditional development to Continuous Deployment and some main practices associated to these phases(Fig. \ref{Stairway}). Many software companies are subjected to constant alteration concerning their software development in order to stay competitive. Therefore, they need to improve their way of building software.
+This section describes the transition from traditional development to Continuous Deployment and some main practices associated to these phases(Fig. \ref{Stairway}). Many software companies are subjected to constant alteration concerning their software development strategy in order to stay competitive. Therefore, they need to improve their way of building software.
 \\
- It is important to say that the application model plays a big role for the success of the CD adoption. Albeit the traditional 'waterfall model' may be still adequate for some companies offering legacy software (e.g in the financial sector), CD gains more and more attraction for Web-based applications \cite{schermann2016empirical}.
+ It is important to say that the application model plays a big role for the success of the CD adoption. Albeit the traditional 'waterfall model' may be still adequate for some companies offering software for embedded systems, CD gains more and more attraction for Web-based applications \cite{schermann2016empirical}.
 In the remainder of this section each phase of the "stairway to heaven" is discussed in detail. 
-The barriers each transition causes, are discussed in section V. %TODO stimmt das? 
+
 
 \subsection{The Stairway to Heaven}
 The main ideas within this section come from \cite{shahin2017continuous}, \cite{schermann2016empirical} and \cite{olsson2012climbing}. They refer to CD as a practice to keep the product "perpetually in a shippable state" using a "fully or at least partially automated deployment pipeline" \cite{schermann2016empirical}. This shows the interchangeability of CDE and CD as they are combining CDE and CD in one term. Besides, they put another practice on top of CD: "Partial Rollouts" (Fig.\ref{Stairway}). 
- \cite{schermann2016empirical} also points out that the adoption of CD does not always has to follow the "stairway to heaven" as many companies already implemented a few continuous practices.
-
+ \cite{schermann2016empirical} also points out that the adoption of CD does not always has to follow the "stairway to heaven". \cite{taheritanjani2016comparison} presented the "Rugby Process approach which also adopts CD, but in a different way.
+ 
+ 
 \begin{figure}[h]
 	\hspace*{-2cm} 
 	\includegraphics[height=4cm]{Stairway}  
@@ -146,18 +147,18 @@ The main ideas within this section come from \cite{shahin2017continuous}, \cite{
 
 
 \subsubsection{Phase 1: Traditional Development}
-Traditional deployment is a software development approach, that is characterized by slow development cycles, the "waterfall model"  or a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process is typically at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the included disadvantages. It has to be noticed, that it is not the aim of the seminar paper to judge about the suitability of this kind of software development and architecture. But for successfully implementing Continuous Practices, they are simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution in agile organization. 
+Traditional development is an approach, that is characterized by slow development cycles, the "waterfall model"  or a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process is typically at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the included disadvantages. It has to be noticed, that it is not the aim of the seminar paper to judge about the suitability of this kind of software development and architecture. But for successfully implementing Continuous Practices, it is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution is agile organization. 
 
 \subsubsection{Phase 2: Agile Organization}
-A brief introduction in Agile Methodologies is given in \ref{background}. Agile Organization, of course, includes agile methodologies, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
+A brief introduction in Agile Methodologies is given in \ref{background} . Agile Organization, of course, includes agile methodologies, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
 To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams work on complete features which supports iterative development. As a consequence, this improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it passes all required test, they merge it into the main project. 
 \\ 
 The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI. 
 
 \subsubsection{Phase 3: Continuous Integration}  
-The core of CI is the continuous integration of code into a shared repository across all teams developing a software product. Again, a cultural shift is necessary in order to realize CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. The continuous integration of code by many different teams can result in long-living parallel development branches . To reduce this complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. What happens to features that are not ready to be deployed, but already integrated into master? The concept of Feature Toggles provides a good solution strategy. In very simple terms, Feature Toggles permit to switch on or off a certain code block. So whenever a feature is ready for production, you just turn it on. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by Dashboards, public monitors in the office or chat tools informing everybody and creating transparency.
+The core of CI is the continuous integration of code into a shared repository across all teams when developing a software product. Again, a cultural shift is necessary in order to realize CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. The continuous integration of code by many different teams can result in long-living parallel development branches . To reduce this complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. What happens to features that are not ready to be deployed, but already integrated into master? The concept of Feature Toggles provides a good solution strategy. In very simple terms, Feature Toggles permit to switch on and off a certain code block. So whenever a feature is ready for production, you just turn it on. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by dashboards, public monitors in the office or chat tools. This simplifies the flow of information and creates transparency.
 \\
-Fig. \ref{RelCSE} demonstrates, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: 1. Add a test based on a required feature, 2. Run all test and see which test fails, 3. Write or refactor the code, 4. Run the tests again. Repeat those steps in very short development cycles until all test cases are passing. This helps to continuously check the quality of the written code. "Test planning" is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they make a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In "cross-team testing", tests are performed by a group of developers from another team and vice versa. 
+Fig. \ref{RelCSE} demonstrates, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: First, add a test based on a required feature; second, run all test and see which test fails; then, write or refactor the code; finally, run the tests again. Repeat those steps in very short development cycles until all test cases are passing. This helps to continuously check the quality of the written code. "Test planning" is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they make a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In "cross-team testing", tests are performed by a group of developers from another team and vice versa. 
 \\
 Besides, defining new roles like a build sheriff is a useful practice to promote  CI's success.
 The build sheriff constantly watches the CI process or indicates that build process failed \cite{shahin2017continuous}.
@@ -172,17 +173,17 @@ CD requires not just the development and operations team (DevOps), but also the 
 	\caption{\label{teamstructure}Possible team structure in a CSE Team  \cite{taheritanjani2016comparison}} 
 \end{figure}
 
-Further practices to successfully implement CD are "health checks" (HC) and the idea of "developer on call"(DOC). Monitoring on infrastructure (e.g CPU utilization) and application (e.g response time) level is used to extinguish 'health' problems of the deployed software. Those "health checks" can also be used to support rollout decisions (e.g increase traffic for a canary release) \cite{schermann2016empirical}. "Developer on call" is associated with the idea of DevOps: Developers shall be available and responsible for their code, all the more after deployment. In case of any error occured after a code change, they know best where to find and how to fix it.
+Further practices to successfully implement CD are "health checks" (HC) and the idea of "developer on call"(DOC). Monitoring on infrastructure level (e.g CPU utilization) and application level (e.g response time)  is used to extinguish 'health' problems of the deployed software. Those "health checks" can also be used to support rollout decisions (e.g increase traffic for a canary release) \cite{schermann2016empirical}. "Developer on call" is associated with the idea of DevOps: Developers shall be available and responsible for their code, all the more after deployment. In case of any error occurred after a code change, they know best where to find and how to fix it.
 
 \subsubsection{Phase 5: Partial Rollouts}
-\cite{schermann2016empirical} describes partial rollout practices as "the epitome" of CD. Releasing software is always the critical part in software engineering, as customers may receive buggy code. So what can be done to mitigate the consequences of deploying buggy software? \cite{shahin2017continuous} and \cite{schermann2016empirical} propose the usage of "canary release", "A/B Testin"(AB) or "Dark Launches"(DAR). Those practices are considered as "run-time quality assurance and requirements validation techniques" \cite{schermann2016empirical}.
+\cite{schermann2016empirical} describes partial rollout practices as "the epitome" of CD. Releasing software is always the critical part in software engineering, as customers may receive buggy code. So what can be done to mitigate the consequences of deploying buggy software? \cite{shahin2017continuous} and \cite{schermann2016empirical} propose the usage of "canary release", "A/B Testing"(AB) or "Dark Launches"(DAR). Those practices are considered as "run-time quality assurance and requirements validation techniques" \cite{schermann2016empirical}.
 \\
-Canary Release is a deployment method where a new software version is deployed only to a "small set of users". That mitigates the influence of possible buggy code and at the same time produces some real usage data. With that, a team decide if either the released version needs further improvement or can be released completely. A variation of canary release is the "eat your own dog food" approach, where only internal organization members get to use the new version.
+Canary Release is a deployment method where a new software version is deployed only to a "small set of users". That mitigates the influence of buggy code an,d at the same time, produces some real usage data. With that, a team decides if either the released version needs further improvement or can be released completely. A variation of canary release is the "eat your own dog food" approach, where only internal organization members get to use the new version.
 %TODO: Umsetzungsarten können hinzugefügt werden
 \\
 A/B Testing is similar to canary release. It requires a bigger user base, as there are currently two versions running. By collecting statistics, the team is able to decide whether version A or B performs better.
 \\
-Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show to the user. 
+Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently to decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show to the user. 
 
 \subsection{A comparison between Traditional Development, Agile Development and the CD process}
 The following table compares the development and deployment of the traditional, agile and CD process based on \cite{claps2015journey}.
@@ -192,25 +193,25 @@ The following table compares the development and deployment of the traditional, 
 \begin{tabular}{|L{2.5cm}|L{3cm}|L{3cm}|L{3.5cm}|}
 
 \hline
-  & Traditional development & Agile development & Continuous Practices \\
+  & \textbf{Traditional development} & \textbf{Agile development} &\textbf{Continuous Practices} \\
  \hline
- Team size & Big Teams, a few dozen poeple & Small teams, 2-8 people & Small teams, 2-8 people \\
+\textbf{Team size} & Big teams, a few dozen poeple & Small teams, 2-8 people & Small teams, 2-8 people \\
   \hline
- Team competence & Divided in discipline  & Cross-functional teams & Cross-functional teams and new roles\\
+ \textbf{Team competence} & Divided in discipline  & Cross-functional teams & Cross-functional teams and new roles\\
   \hline
- Planning & Rigorous planning phase at the beginning & Iterative planning in short cycles & Continuous planning in short cycles\\
+\textbf{Planning} & Rigorous planning phase at the beginning & Iterative planning in short cycles & Continuous planning in short cycles\\
   \hline
- Testing & Explicit testing at the end of the project   & Testing at the end of each cycle & (Semi-)automated tests with every pipeline run  \\
+\textbf{Testing} & Explicit testing at the end of the project   & Testing at the end of each cycle & (Semi-)automated tests with every pipeline run  \\
   \hline
- Architecture & 3-Layer, monolithic, strong dependencies between modules & 3-Layer or Microservices, less dependencies & Desire: almost no dependencies, independent deployability of modules    \\
+ \textbf{Architecture} & 3-Layer, monolithic, strong dependencies between modules & 3-Layer or Microservices, less dependencies & Desire: almost no dependencies, independent deployability of modules    \\
   \hline
- Frequency of deployment & Once waterfall process finished (months, year) & Weekly & Daily  \\
+\textbf{Frequency of deployment} & Once waterfall process finished (months, year) & Weekly & Daily  \\
   \hline
- Relative risk of deployment & High: no automation, infrequent process, huge amount of code & Still High: no automation but frequent process  &Low: automation, small amount of changes, only few dependencies \\
+\textbf{Relative risk of deployment} & High: no automation, infrequent process, huge amount of code & Still High: no automation but frequent process  &Low: automation, small amount of changes, only few dependencies \\
   \hline
- Customer/developer feedback loop & Long due to infrequent deployments & Depends on the deployment frequency &Very short, customers constantly give feedback\\
+\textbf{Customer/ developer feedback loop} & Long due to infrequent deployments & Depends on the deployment frequency &Very short, customers constantly give feedback\\
   \hline
- Unnecessary features & High amount due to long feedback loop & & prevent development of any wasted software  \\
+ \textbf{Unnecessary features} & High amount due to long feedback loop & moderate feature rejection& prevent development of any wasted software  \\
  \hline
 \end{tabular}
 \end{table}
@@ -218,7 +219,7 @@ The following table compares the development and deployment of the traditional, 
 \section{Deployment Pipeline and Tools}
 A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build process, testing, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrate, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
 \\
-Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They are able to fix it and start the pipeline again by committing the changes. 
+Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They fix it and start the pipeline again by committing the changes. 
 \\
 Thus, the engineering process of a pipeline,the software's architecture, the degree of automation or the available tools generate some serious challenges. They are discussed in Section V.
 
@@ -250,7 +251,9 @@ JUnit is a common tool to run unit tests. To store the results of acceptance tes
 
 
 \subsubsection{Configuration and Provisioning}
-Automating the configuration and provision of servers, test environments, virtual machines or infrastructure is an innovation in deployment pipelines \cite{shahin2017continuous}. Usually, a vast amount of time is needed to set up those environments \cite{chen2015towards}. This justifies that new approach, albeit there a currently not that many tools available. 
+Automating the configuration and provision of servers, test environments, virtual machines or infrastructure is an innovation in deployment pipelines \cite{shahin2017continuous}. Usually, a vast amount of time is needed to set up those environments \cite{chen2015towards}. Therefore, automation is absolutely necessary but there are currently not that many tools available.
+
+
 
 \subsubsection{CD Server}
 The release process of a software is the final stage in Continuous Software Engineering(CSE). Having a tool that automatically deploys code to production (either internally or externally) is substantial for successfully accomplish the goal of CSE.
