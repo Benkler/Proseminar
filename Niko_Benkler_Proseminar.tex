@@ -263,7 +263,7 @@ HockeyApp is a well known CDE server. Web Deploy or Deployr are software tools t
 
 
 \subsection{Tools in a Deployment Pipeline}
-Fig.\ref{Tools} provides some tools and divides them into the stages they belong to. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed explanation or comparison of those tools, as this would be far to complex. 
+Fig.\ref{Tools} is showing a selection of tools which can be used to build the presented pipeline. They are divided up into the stages of the pipeline. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed explanation or comparison of those tools, as this would be far to complex. 
 
 \begin{figure}[t]
 	\centering
@@ -276,7 +276,7 @@ Fig.\ref{Tools} provides some tools and divides them into the stages they belong
 \section{Challenges for Adopting Continuous Practices}
 "Continuous Delivery: Huge Benefits, but Challenges Too" \cite{chen2015continuous}. This is how Lianping Chen, a software developer of a company called Paddy Power, names his paper. He describes how they (Paddy Power) adopted Continuous Practices, reporting "huge benefits and challenges involved".
 \\
-While studying several papers about Continuous Practices in general, it was remarkable how many of them reported about the challenges of adopting CI,CDE or CD. 
+While studying several papers about Continuous Practices in general, it was remarkable how many of them reported about the challenges they had to face while adopting CI,CDE or CD. 
 Currently, there is little research done on how to better introduce them \cite{chen2015continuous}.  As a consequence, "out of the box" solutions are mostly not available.
 \\
 The following sections are divided in the different kinds of challenges a software development organization may has to face when adopting Continuous Practices
@@ -284,18 +284,18 @@ Those are: Organizational, technical, social and architectural challenges. If av
 
 
 \subsection{Organizational Challenges}
-Almost every source identifies the breakdown of barriers among the teams as on of the most important organizational challenge. For successfully adopting Continuous Practices, transparency, coordination and a closer collaboration between development teams, operational staff and management has to be established. Team restructuring and the definition of new roles are common mitigation practices \cite{chen2015continuous}. To establish more transparency, full developer awareness is required, as mentioned in Section II.
+Almost every source used in this seminar paper identifies the breakdown of barriers among the teams as on of the most important organizational challenge. For successfully adopting Continuous Practices, transparency, coordination and a closer collaboration between development teams, operational staff and management has to be established. Team restructuring and the definition of new roles are common mitigation practices \cite{chen2015continuous}. To establish more transparency, full developer awareness is required, as mentioned in Section II.
 \\
 Having separated development and operation staff causes a very slow failure recovery \cite{shahin2016intersection}. The introduction of DevOps practices reduces the time between failure discovery and bug fix according to the principle: "You build it, you run it" \cite{shahin2016intersection}. 
-Deployment is a business decision. In Some organizations, only management or financial operators are in charge of the release decision. Asking for permission to release can be a lengthy process, which is obviously contrary to the idea of CD \cite{shahin2017beyond}.
-The same source identifies the lack of experience and skill as another challenge. Using pilot teams, formal training and workshops is a counteracting strategy.
+However, some companies consider the deployment process as a business decision. They believe, only management or financial operators are in charge of the release decision. Asking for permission to release can be a lengthy process, which is obviously contrary to the idea of CD \cite{shahin2017beyond}.
+Shahin identifies the lack of experience and skill as another challenge. Using pilot teams, formal training and workshops is a counteracting strategy.
 
 
 
 \subsection{Technical Challenges}
 The variety of available tools to implement Continuous Practices is problematic. Especially test tools for user acceptance test are either non-existent or hardly capable of being integrated into an automated pipeline \cite{shahin2017beyond}. Besides, manual quality checks are sometimes unavoidable. A fully automated testing infrastructure still is one of the main challenge to achieve full automation \cite{laukkanen2016bottom}.
 \\
-As there are no "out of the box" solutions, companies have to design and implement their own CD pipeline. A "no downtime policy" requires proper hardware, as seamless upgrades are necessary. It is simply not possible, to shut down the system, every time a new version is deployed. This is not just time consuming but connected to a high investment which discourages companies to do CSE \cite{chen2015continuous}.  \cite{shahin2017continuous} reports that security issues in pipeline still remain a big challenge. 
+As there are no "out of the box" solutions, companies have to design and implement their own CD pipeline. Besides, a "no downtime policy" requires proper hardware, as seamless upgrades are necessary. It is simply not possible, to shut down the system, every time a new version is deployed. This is not just time consuming but connected to a high investment which discourages companies to do CSE \cite{chen2015continuous}.  \cite{shahin2017continuous} reports that security issues in pipeline still remain a big challenge. 
 It has to be noted, that some domains do not allow to truly implement CD. E.g. embedded systems, telecommunication systems, medical and other safety critical systems.
 
 
@@ -303,7 +303,7 @@ It has to be noted, that some domains do not allow to truly implement CD. E.g. e
 
 
 \subsection{Social Challenges}
-The resistance to change or the lack of motivation are obstacles while adopting Continuous Practices \cite{chen2015continuous} \cite{claps2015journey}. To address these barriers, it has to be ensured that team leaders and managers are pushing the new practices and convince their employees of the benefits. Pilot teams and workshops may help to better introduce CSE within the company.
+The resistance to change or the lack of motivation are obstacles while adopting Continuous Practices \cite{chen2015continuous} \cite{claps2015journey}. To address them, it has to be ensured that team leaders and managers are pushing the new practices and convince their employees of the benefits. Pilot teams and workshops may help to better introduce CSE within the company.
 Nevertheless, it has been reported that the pressure on developers increases, as the are in charge of having the code always ready for production. 
 Mistrust in the build process and the test results are a common reason for developers to reject CSE \cite{laukkanen2016bottom}. Therefore, confidence into the CD process has to be established. 
 \\
@@ -317,7 +317,21 @@ At customer site, demotivated  clients make it difficult to introduce Continuous
 Large, monolithic applications are rarely compatible with Continuous Practices \cite{chen2015continuous}. Their highly coupled architecture implies cross-functional dependencies which need to be managed in the pipeline. The bigger the application, the higher the complexity that has to be managed within the pipeline. Testing single modules is quite often not possible and monolithic databases become undeployable units. 
 To address these challenges, a redesign is necessary \cite{shahin2016intersection}. Splitting the application (including the database) into small deployable  units, vertical layering or the use of  Microservices is necessary. Nevertheless, this is a costly undertaking that often prevents organizations to move software to CD \cite{chen2015towards}.
 
-\section{Discussion and Conclusion}
+\section{Conclusion}
+In this study we...stairway ....
+Factors.... aus abstract nehmen
+
+- number of technical and social chalenges 
+- shift in culture
+- cd should be extremly adaptable to unpredictable changes
+-cost
+- always atrade off  but eventually it will pay off
+
+-do not claim CD perfect an resolves aevery problem
+- benefits ausichtreich
+- further research on how to implement CD, tools, transition, 
+- Moving apps to CD is challenging, no current information
+Architectural conderns, barries and challenges
 
 \newpage
 
