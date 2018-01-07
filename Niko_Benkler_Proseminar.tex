@@ -60,8 +60,8 @@
 
 
 \section{Introduction}
-Today, the software development process has to face many difficult demands. Fast-changing and unpredictable markets, changing customer requirements \cite{claps2015journey} and rapidly advancing information technologies \cite{olsson2012climbing} require a faster process of software development. 
-To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey}. Therefore, releasing software becomes even faster. 
+Today, the software development process has to face many difficult demands. Fast-changing and unpredictable markets, changing customer requirements \cite{claps2015journey} and rapidly advancing information technologies \cite{olsson2012climbing} require a faster and more flexible process of software development. 
+To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey} or to replace their traditional development methodologies. Therefore, releasing software becomes even faster. 
 \\
 This seminar paper presents a possible evolution path, referenced as 'stairway to heaven' \cite{olsson2012climbing}, which describes a transition from traditional development towards CD. 
 As the core of CDE is a deployment pipeline \cite{schermann2016empirical}, the paper also presents its usual phases and the possible tools, that support each phase.
@@ -74,14 +74,14 @@ Here, I give an overview of the most important keywords. Those keywords are nece
 Therefore, the following subsections provide the definitions as they are used in this seminar paper.
 
 \subsection{Agile Methodologies}
-Agile software development is based on "iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams" \cite{taheritanjani2016comparison}. It encourages adaptive planning, early delivery and continuous improvement.
+Agile software development is based on "iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams" \cite{taheritanjani2016comparison}. It encourages adaptive planning, early delivery and iterative improvement.
 Besides, other characteristics such as flexibility, efficiency, speed, the ability to react to fast changing customer requirements and fluctuating market needs \cite{olsson2012climbing} make agile methodologies so attractive for organizations. 
 As mentioned before, agile methodologies were introduced in the early 2000 \cite{shahin2017continuous}. So far, many development companies succeeded in implementing agile methodologies. 
 However, agile software development 'only' allows frequent software releases but no continuous releases. The difference becomes clear, when it comes to the comparison of traditional deployment and CD. 
 The original "Manifesto for agile software development" popularized by Kent Beck did not include any automation. 
 
 \subsection{DevOps}
- "\textbf{DevOps} is a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality" \cite{bass2015devops}. It is a coined word, that stands for Development (Dev) and Operations (Ops). The main task is bringing together programmers, testers and quality insurance engineers but also  IT operations staff \cite{claps2015journey} to shorten feedback loop. According to \cite{bass2015devops}, the DevOps practices can be differentiated in 5 categories:
+ "\textbf{DevOps} is a set of practices intended to reduce the time between committing a change to a system and being placed into  production, while ensuring high quality" \cite{bass2015devops}. It is a coined word, that stands for Development (Dev) and Operations (Ops). The main task is bringing together programmers, testers and quality insurance engineers but also  IT operations staff \cite{claps2015journey} primarily to shorten feedback loop. According to \cite{bass2015devops}, the DevOps practices can be differentiated in 5 categories:
  \begin{itemize}
  	\item Treat Ops as "first-class citizens". This means, the involvement of operations in the development process. 
  	\item Dev has to be more responsible for incident handling to shorten the time between error observation an the error fix.
@@ -92,8 +92,8 @@ The original "Manifesto for agile software development" popularized by Kent Beck
 
 \noindent Especially the fourth category shows the close connection between DevOps practices and continuous practices.
 
-\subsection{Continuous software engineering}
-Continuous software engineering \textbf{(CES)} is a practice that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
+\subsection{Continuous Software Engineering}
+Continuous software engineering \textbf{(CES)} is a practice, that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
 
 \begin{figure}[h]
 	\hspace*{-2cm} 
@@ -103,19 +103,20 @@ Continuous software engineering \textbf{(CES)} is a practice that promotes the d
 \newpage
 
 \subsubsection{Continuous Integration}
-Continuous Integration \textbf{(CI)} is a CSE practice in which developers integrate and merge their work into a shared repository very frequently, for example multiple times a day \cite{shahin2017continuous} \cite{schermann2016empirical}. Also,  automated builds and tests permit to discover integration, build and test errors as fast as possible. CI improves  the effectiveness of a team as much as the software quality \cite{shahin2017continuous}. In other words, CI ensures, that the software is always in a ready to deploy state \cite{claps2015journey}.
+Continuous Integration \textbf{(CI)} is a CSE practice that focuses on frequently integrating and merging produced code into a shared repository (e.g. multiple times a day) \cite{shahin2017continuous} \cite{schermann2016empirical}. Automated builds and tests also belong to the idea of CI. Therefore, build and test errors can be discovered much earlier.
+CI improves  the effectiveness of a team as much as the software quality \cite{shahin2017continuous}. In other words, CI ensures, that the software is always in a ready to deploy state \cite{claps2015journey}.
 
 
 \subsubsection{Continuous Delivery}
 A brief definition of Continuous Delivery \textbf{(CDE)} is given in \cite{laukkanen2016bottom}: "Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time." 
-Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, such as a less risky release process \cite{laukkanen2016bottom} due to automation or the ability to learn from real usage data \cite{olsson2012climbing}. As a consequence, the software developers can decide whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manually. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
+Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, such as a less risky release process \cite{laukkanen2016bottom} due to automation or the ability to learn from real usage data \cite{olsson2012climbing}. As a consequence, the software developers can decide whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manually. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, the CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
 
 
 
 \subsubsection{Continuous Deployment}
 An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), one times a day (nightly build) or several times a week (weekend builds). Fig. \ref{CDBenefits}  provides a quick overview of CDE's and consequently CD's benefits. CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD (and CDE) practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section IV. %TODO stimmt das mit der section? Auch nächste Zeile
 Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
-Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section 5 %TODO stimmt die section!
+Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section V. %TODO stimmt die section!
 
  \begin{figure}[h]
  	\centering
@@ -183,7 +184,7 @@ A/B Testing is similar to canary release. It requires a bigger user base, as the
 \\
 Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show to the user. 
 
-\subsection{A comparison between traditional development, agile development and the CD process}
+\subsection{A comparison between Traditional Development, Agile Development and the CD process}
 The following table compares the development and deployment of the traditional, agile and CD process based on \cite{claps2015journey}.
 
 \begin{table}
@@ -313,7 +314,7 @@ At customer site, demotivated  clients make it difficult to introduce Continuous
 Large, monolithic applications are rarely compatible with Continuous Practices \cite{chen2015continuous}. Their highly coupled architecture implies cross-functional dependencies which need to be managed in the pipeline. The bigger the application, the higher the complexity that has to be managed within the pipeline. Testing single modules is quite often not possible and monolithic databases become undeployable units. 
 To address these challenges, a redesign is necessary \cite{shahin2016intersection}. Splitting the application (including the database) into small deployable  units, vertical layering or the use of  Microservices is necessary. Nevertheless, this is a costly undertaking that often prevents organizations to move software to CD \cite{chen2015towards}.
 
-
+\section{Discussion and Conclusion}
 
 \newpage
 
