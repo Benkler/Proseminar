@@ -33,4 +33,4 @@
 \contentsline {subsection}{\numberline {5.2}Technical Challenges}{14}{subsection.1.5.2}
 \contentsline {subsection}{\numberline {5.3}Social Challenges}{14}{subsection.1.5.3}
 \contentsline {subsection}{\numberline {5.4}Architectural Challenges }{14}{subsection.1.5.4}
-\contentsline {section}{\numberline {6}Discussion and Conclusion}{15}{section.1.6}
+\contentsline {section}{\numberline {6}Conclusion}{15}{section.1.6}
