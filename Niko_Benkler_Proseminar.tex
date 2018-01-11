@@ -43,9 +43,9 @@
 \maketitle
 
 \begin{abstract} 
- 	In the last decade, software development experienced a huge transition. Since agile methodologies were introduces in the early 2000, software development became faster and faster. Today, another software development process is emerging: Continuous Software Engineering (CSE). CSE, especially Continuous Integration(CI), Continuous Delivery(CDE) and Continuous Deployment(CD) receive more and more attention in organizations such as Facebook, Paddy Power and Atlassian but also in small start-up companies. 
+ 	In the last decade, software development experienced a huge transition. Since agile methodologies were introduced in the early 2000, software development became faster and faster. Today, another software development process is emerging: Continuous Software Engineering (CSE). CSE, especially Continuous Integration(CI), Continuous Delivery(CDE) and Continuous Deployment(CD) receive more and more attention in organizations such as Facebook, Paddy Power and Atlassian, but also in small start-up companies. 
  	It enables them to e.g. deliver software more frequently, reduce time-to-market, obtain customer feedback faster, build the right product or to improve product quality. 
- 	Therefore, this seminar paper presents the current state of the art concerning Continuous Practices, compares the traditional deployment strategies with the new CSE practices and proposes some tools, that can be used in a CI/CD Pipeline to support CSE. But also, it reveals the barriers an organization has to face while adopting Continuous Practices. CSE not only turns up with benefits, it also has negative side effects such as a time consuming and costly implementation or an increasing mental stress for development team members.
+ 	Therefore, this seminar paper presents the current state of the art concerning Continuous Practices, compares the traditional deployment strategies with the new CSE practices and proposes some tools, that can be used in a CI/CD Pipeline to support CSE. But also, it reveals the barriers an organization has to face while adopting Continuous Practices. CSE not only turns up with benefits, it also has negative side effects, such as a time consuming and costly implementation or an increasing mental stress for development team members.
 
     
  	\textbf{Keywords - }Agile, continuous software development, continuous integration, continuous delivery, continuous deployment, DevOps, CI/CD Pipeline
@@ -62,27 +62,26 @@
 Today, the software development process has to face many difficult demands. Fast-changing and unpredictable markets, changing customer requirements \cite{claps2015journey} and rapidly advancing information technologies \cite{olsson2012climbing} require a faster and more flexible process of software development. 
 To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey} or to replace their traditional development methodologies. Therefore, releasing software becomes even faster. 
 \\
-This seminar paper presents a possible evolution path, referenced as 'stairway to heaven' \cite{olsson2012climbing}, which describes a transition from traditional development towards CD. 
-As the core of CDE is a deployment pipeline \cite{schermann2016empirical}, the paper also presents its usual phases and the possible tools, that support each phase.
-Nevertheless, studying several papers revealed, that CDE not only comes with benefits, but also with huge social and technical challenges \cite{claps2015journey}. The paper clarifies them and proposes some mitigation strategies. 
+This seminar paper presents a possible evolution path, referenced as 'stairway to heaven' \cite{olsson2012climbing}, which describes a transition from traditional development towards CD. The core of CSE is a deployment pipeline \cite{schermann2016empirical}. Therefore the paper also presents its usual phases and the possible tools, that support each phase.
+Nevertheless, studying several papers revealed, that CSE not only comes with benefits, but also with huge social and technical challenges \cite{claps2015journey}. The paper clarifies them and proposes some mitigation strategies. 
 %TODO  Stimmt der remainder noch???
-The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD based on the 'stairway to heaven' model \cite{olsson2012climbing} and \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by an explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges that are caused by CDE. Finally, I present my conclusion in section VI.
+The remainder of the seminar paper is structured as follows: In section II, we define the terminology. Section III describes a possible transition from traditional deployment to CD, based on the 'stairway to heaven' model \cite{olsson2012climbing} \cite{shahin2017beyond}.This includes several deployment strategies used to adapt CSE practices and the comparison between traditional deployment and the CD process. That section is followed by an explanation of a possible pipeline and the available tools which can be used to support the tasks of each phase.  Section V discusses the challenges which occur when adopting CSE practices. Finally, I present my conclusion in section VI.
 
 \section{Background} \label{background}
-Here, I give an overview of the most important keywords. Those keywords are necessary to understand the content of the seminar paper. When studying the currently available information about Continuous Software Engineering (CSE), one could clearly see that there are no universally accepted definitions \cite{schermann2016empirical}. Terms like CDE and CD are sometimes used interchangeable, albeit the is a small but relevant difference \cite{shahin2017continuous}.
+Here, I give an overview of the most important keywords. Those are necessary to understand the content of the seminar paper. When studying the available information about Continuous Software Engineering (CSE), one could clearly see that there are no universally accepted definitions \cite{schermann2016empirical}. Terms like CDE and CD are sometimes used interchangeable, albeit the is a small but relevant difference \cite{shahin2017continuous}.
 Therefore, the following subsections provide the definitions as they are used in this seminar paper.
 
 \subsection{Agile Methodologies}
 Agile software development is based on "iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams" \cite{taheritanjani2016comparison}. It encourages adaptive planning, early delivery and iterative improvement.
 Besides, other characteristics such as flexibility, efficiency, speed, the ability to react to fast changing customer requirements and fluctuating market needs \cite{olsson2012climbing} make agile methodologies so attractive for organizations. 
 As mentioned before, agile methodologies were introduced in the early 2000 \cite{shahin2017continuous}. So far, many development companies succeeded in implementing agile methodologies. 
-However, agile software development 'only' allows frequent software releases but no continuous releases. The difference becomes clear, when it comes to the comparison of traditional deployment and CD. 
+However, agile software development 'only' allows frequent software releases, not continuous releases. The difference becomes clear, when it comes to the comparison of traditional deployment and CD. 
 The original "Manifesto for agile software development" popularized by Kent Beck did not include any automation. 
 
 \subsection{DevOps}
  "\textbf{DevOps} is a set of practices intended to reduce the time between committing a change to a system and being placed into  production, while ensuring high quality" \cite{bass2015devops}. It is a coined word, that stands for Development (Dev) and Operations (Ops). The main task is bringing together programmers, testers and quality insurance engineers but also  IT operations staff \cite{claps2015journey} primarily to shorten feedback loop. According to \cite{bass2015devops}, the DevOps practices can be differentiated in 5 categories:
  \begin{itemize}
- 	\item Treat Ops as "first-class citizens". This means, the involvement of operations in the development process. 
+ 	\item Treat Ops as "first-class citizens" by involving them into the development process. 
  	\item Dev has to be more responsible for incident handling to shorten the time between error observation an the error fix.
  	\item Include both, Dev and Ops into the deployment process in order to avoid errors caused by buggy deployment.
  	\item Use continuous deployment.
@@ -92,7 +91,7 @@ The original "Manifesto for agile software development" popularized by Kent Beck
 \noindent Especially the fourth category shows the close connection between DevOps practices and continuous practices.
 
 \subsection{Continuous Software Engineering}
-Continuous software engineering \textbf{(CES)} is a practice, that promotes the development, deployment and the release of software products in very short cycles, typically hours or days. \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
+Continuous software engineering \textbf{(CES)} is a practice, that promotes the development, deployment and the release of software products in very short cycles, typically hours or days \cite{shahin2017continuous} \cite{taheritanjani2016comparison}. As a direct consequence, quick feedback allows i.a.: to determine new functionality to build, feature prioritization, information about the suitability of the current software architecture, to gather data for decision making in general. CES requires agile methodologies and DevOps practices \cite{taheritanjani2016comparison}. According to \cite{shahin2017continuous}, CES involves 3 phases: Business Strategy and Planning, Development, Operations. This seminar paper focuses on the three development activities: continuous integration, continuous delivery and continuous deployment. Fig. \ref{RelCSE} demonstrates the relationship between CI, CDE and CD.
 
 \begin{figure}[h]
 	\hspace*{-2cm} 
@@ -134,8 +133,8 @@ In the remainder of this section each phase of the "stairway to heaven" is discu
 
 
 \subsection{The Stairway to Heaven}
-The main ideas within this section come from \cite{shahin2017continuous}, \cite{schermann2016empirical} and \cite{olsson2012climbing}. They refer to CD as a practice to keep the product "perpetually in a shippable state" using a "fully or at least partially automated deployment pipeline" \cite{schermann2016empirical}. This shows the interchangeability of CDE and CD as they are combining CDE and CD in one term. Besides, they put another practice on top of CD: "Partial Rollouts" (Fig.\ref{Stairway}). 
- \cite{schermann2016empirical} also points out that the adoption of CD does not always has to follow the "stairway to heaven". \cite{taheritanjani2016comparison} presented the "Rugby Process approach which also adopts CD, but in a different way.
+The main ideas within this section come from \cite{shahin2017continuous}, \cite{schermann2016empirical} and \cite{olsson2012climbing}. They refer to CD as a practice to keep the product "perpetually in a shippable state" using a "fully or at least partially automated deployment pipeline" \cite{schermann2016empirical}. This shows the interchangeability of CDE and CD as they are combining CDE and CD in one term. Besides, they put another phase on top of CD: "Partial Rollouts" (Fig.\ref{Stairway}). 
+ \cite{schermann2016empirical} also points out that the adoption of CD does not always has to follow the "stairway to heaven". For example, \cite{taheritanjani2016comparison} presents the "Rugby Process" approach which also adopts CD, but in a different way.
  
  
 \begin{figure}[h]
@@ -149,15 +148,17 @@ The main ideas within this section come from \cite{shahin2017continuous}, \cite{
 Traditional development is an approach, that is characterized by slow development cycles, the "waterfall model"  or a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process is typically at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the included disadvantages. It has to be noticed, that it is not the aim of the seminar paper to judge about the suitability of this kind of software development and architecture. But for successfully implementing Continuous Practices, it is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution is agile organization. 
 
 \subsubsection{Phase 2: Agile Organization}
-A brief introduction in Agile Methodologies is given in \ref{background} . Agile Organization, of course, includes agile methodologies, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
-To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams work on complete features which supports iterative development. As a consequence, this improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it passes all required test, they merge it into the main project. 
+A brief introduction in Agile Methodologies is given in section \ref{background} . Agile Organization, of course, includes agile methodologies, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
+To successfully proceed to agile organization, the most important aspect is mindset. The resistance to change is a challenge for each evolution step. Therefore, managerial support is needed to convince each employee of the initiative. Having a few agile teams (pilot teams) promoting their methods within the organization, has a positive effect on the whole company \cite{olsson2012climbing}. Besides, there is a strong need to improve information exchange within and across the teams. As a result, the development teams are organized in small and cross-functional teams. The members of cross-functional teams covers all aspects of software development and delivery \cite{taheritanjani2016comparison}. This enables the organization having feature teams instead of component teams. Feature teams design and develop the entire features. This supports iterative development. As a consequence, this improves the release frequency. It has to be noted, that the development teams do not yet continuously integrate their code to a organization-wide shared code base. So far, they develop a feature within their team and when it passes all required test, they merge it into the main project. 
 \\ 
 The next step of the "stairway to heaven" is Continuous Integration. The following subsection provides some basic concepts to achieve CI. 
 
 \subsubsection{Phase 3: Continuous Integration}  
-The core of CI is the continuous integration of code into a shared repository across all teams when developing a software product. Again, a cultural shift is necessary in order to realize CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. The continuous integration of code by many different teams can result in long-living parallel development branches . To reduce this complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. What happens to features that are not ready to be deployed, but already integrated into master? The concept of Feature Toggles provides a good solution strategy. In very simple terms, Feature Toggles permit to switch on and off a certain code block. So whenever a feature is ready for production, you just turn it on. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by dashboards, public monitors in the office or chat tools. This simplifies the flow of information and creates transparency.
+The core of CI is the continuous integration of code into a shared repository across all teams when developing a software product. Again, a cultural shift is necessary in order to realize CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. 
 \\
-Fig. \ref{RelCSE} demonstrates, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: First, add a test based on a required feature; second, run all test and see which test fails; then, write or refactor the code; finally, run the tests again. Repeat those steps in very short development cycles until all test cases are passing. This helps to continuously check the quality of the written code. "Test planning" is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they make a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In "cross-team testing", tests are performed by a group of developers from another team and vice versa. 
+The continuous integration of code by many different teams can result in long-living parallel development branches . To reduce complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. But what happens to features that are not ready to be deployed, but already integrated into master? The concept of Feature Toggles provides a good solution strategy. In very simple terms, Feature Toggles permit to switch on and off a certain code block. So whenever a feature is ready for production, you just turn it on. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by dashboards, public monitors in the office or chat tools. This simplifies the information flow and creates transparency.
+\\
+Fig. \ref{RelCSE} demonstrates, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: First, add a test based on a required feature; second, run all tests and see which test fails; then, write or refactor the code; finally, run the tests again. Repeat those steps in very short development cycles until all test cases are passing. This helps to continuously check the quality of the written code. "Test planning" is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they make a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In "cross-team testing", tests are performed by a group of developers from another team and vice versa. 
 \\
 Besides, defining new roles like a build sheriff is a useful practice to promote  CI's success.
 The build sheriff constantly watches the CI process or indicates that build process failed \cite{shahin2017continuous}.
@@ -168,7 +169,7 @@ CD requires not just the development and operations team (DevOps), but also the 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=4cm]{teamstructure}  
+	\includegraphics[width=8cm]{teamstructure}  
 	\caption{\label{teamstructure}Possible team structure in a CSE Team  \cite{taheritanjani2016comparison}} 
 \end{figure}
 
@@ -213,6 +214,8 @@ The following table compares the development and deployment of the traditional, 
  \hline
 \end{tabular}
 \end{table}
+ 
+
 
 \section{Deployment Pipeline and Tools}
 A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build process, testing, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrate, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
@@ -226,7 +229,7 @@ The example pipeline is divided in 7 stages: 1. version control system, 2. code 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=1.2cm]{pipeline}  
+	\includegraphics[width=12cm, height = 1.7cm]{pipeline}  
 	\caption{\label{pipeline}Deployment Pipeline based on \cite{shahin2017continuous} } 
 \end{figure}
 
@@ -260,7 +263,7 @@ HockeyApp is a well known CDE server. Web Deploy or Deployr are software tools t
 
 
 \subsection{Tools in a Deployment Pipeline}
-Fig.\ref{Tools} is showing a selection of tools which can be used to build the presented pipeline. They are divided up into the stages of the pipeline. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed explanation or comparison of those tools, as this would be far to complex. 
+Fig.\ref{Tools} shows a selection of tools which can be used to build the presented pipeline. They are divided into the stages of the pipeline. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed explanation or comparison of those tools, as this would be far to complex. 
 
 \begin{figure}[t]
 	\centering
@@ -273,15 +276,15 @@ Fig.\ref{Tools} is showing a selection of tools which can be used to build the p
 \section{Challenges for Adopting Continuous Practices}
 "Continuous Delivery: Huge Benefits, but Challenges Too" \cite{chen2015continuous}. This is how Lianping Chen, a software developer of a company called Paddy Power, names his paper. He describes how they (Paddy Power) adopted Continuous Practices, reporting "huge benefits and challenges involved".
 \\
-While studying several papers about Continuous Practices in general, it was remarkable how many of them reported about the challenges they had to face while adopting CI,CDE or CD. 
-Currently, there is little research done on how to better introduce them \cite{chen2015continuous}.  As a consequence, "out of the box" solutions are mostly not available.
+While studying several papers about Continuous Practices in general, it was remarkable how many of them reported about the challenges they had to face while adopting CI,CDE or CD. Many of them divided those challenges in different ways depending on their research topic. Some papers, for example, do not involve social challenges, others only focus on architectural challenges. I decided to divide them in 4 different coarse-grained categories, wherein the found ones can be split. 
+Currently, there is little research done on how to better introduce CI,CDE or CD \cite{chen2015continuous}.  As a consequence, "out of the box" solutions are mostly not available.
 \\
 The following sections are divided in the different kinds of challenges a software development organization may has to face when adopting Continuous Practices
-Those are: Organizational, technical, social and architectural challenges. If available, mitigation strategies are provided as well.
+Those are: Organizational, technical, social and architectural challenges. If available, mitigation strategies are provided as well. 
 
 
 \subsection{Organizational Challenges}
-Almost every source used in this seminar paper identifies the breakdown of barriers among the teams as on of the most important organizational challenge. For successfully adopting Continuous Practices, transparency, coordination and a closer collaboration between development teams, operational staff and management has to be established. Team restructuring and the definition of new roles are common mitigation practices \cite{chen2015continuous}. To establish more transparency, full developer awareness is required, as mentioned in Section II.
+Almost every source used in this seminar paper identifies the breakdown of barriers among the teams as on of the most important organizational challenge. For successfully adopting Continuous Practices, transparency, coordination and a closer collaboration between development teams, operational staff and management has to be established. Team restructuring and the definition of new roles are common mitigation practices \cite{chen2015continuous}. To establish more transparency, full developer awareness is required, as mentioned in section II.
 \\
 Having separated development and operation staff causes a very slow failure recovery \cite{shahin2016intersection}. The introduction of DevOps practices reduces the time between failure discovery and bug fix according to the principle: "You build it, you run it" \cite{shahin2016intersection}. 
 However, some companies consider the deployment process as a business decision. They believe, only management or financial operators are in charge of the release decision. Asking for permission to release can be a lengthy process, which is obviously contrary to the idea of CD \cite{shahin2017beyond}.
@@ -293,7 +296,7 @@ Shahin identifies the lack of experience and skill as another challenge. Using p
 The variety of available tools to implement Continuous Practices is problematic. Especially test tools for user acceptance test are either non-existent or hardly capable of being integrated into an automated pipeline \cite{shahin2017beyond}. Besides, manual quality checks are sometimes unavoidable. A fully automated testing infrastructure still is one of the main challenge to achieve full automation \cite{laukkanen2016bottom}.
 \\
 As there are no "out of the box" solutions, companies have to design and implement their own CD pipeline. Besides, a "no downtime policy" requires proper hardware, as seamless upgrades are necessary. It is simply not possible, to shut down the system, every time a new version is deployed. This is not just time consuming but connected to a high investment which discourages companies to do CSE \cite{chen2015continuous}.  \cite{shahin2017continuous} reports that security issues in pipeline still remain a big challenge. 
-It has to be noted, that some domains do not allow to truly implement CD. E.g. embedded systems, telecommunication systems, medical and other safety critical systems.
+It has to be noted, that some domains do not allow to truly implement CD: Those are e.g. embedded systems, telecommunication systems, medical and other safety critical systems.
 
 
 
@@ -319,7 +322,9 @@ In this seminar paper, I presented a new software development and deployment app
 In order to adopt Continuous Practices, (especially Continuous Integration, Continuous Delivery and Continuous Deployment), I presented an approach called "the stairway to heaven". It demonstrates how a software development organization can make the transition from Traditional Development towards Continuous Deployment. Common practices such as "Full Developer Awareness", "Developer on Call" or "Canary Releases" are incredible helpful to successfully achieve the goal of Continuous Software Engineering. 
 \\
 Also, it became clear that moving an application to CD is challenging. The implementation of CSE requires a vast amount of planning and investment. There is a big number of technical and social challenges, like barriers between teams, a lack of transparency or inadequate tools.
-Furthermore, CSE requires a shift in culture which is opposed to a general resistance to change mindset. There are neither "out of the box" solutions to implement a continuous deployment pipeline, nor many examples of how organizations exactly adopted Continuous Practices so far.
+Furthermore, CSE requires a shift in culture which is opposed to a general resistance to change mindset. There are neither "out of the box" solutions to implement a continuous deployment pipeline, nor many examples of how organizations exactly adopted Continuous Practices so far.  On the other side, there is plenty information about the challenges development teams had to face when they adopted CSE practices. 
+\\
+When studying the available papers about CSE, it became clear that the current definitions are vague. There are no commonly accepted definitions and the boundaries are often not clear. Some authors use CD in a different context than others which sometimes led to confusion. 
 \\
 I do not claim that CDE is the panacea of software development. But there is always a trade off between costs and benefits. Like Agile software development, I personally think that CSE is able to revolutionize software engineering and will be widely accepted among developers within the next few years.
  Nevertheless, further research on how to implement Continuous Practices has to be done. New tools have to be developed to fulfil the requirements of CSE and information about how to move existing applications to CD needs to be gathered.
