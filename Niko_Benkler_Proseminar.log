@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  15 JAN 2018 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.2)  16 JAN 2018 15:04
 entering extended mode
 **./Niko_Benkler_Proseminar.tex
 (Niko_Benkler_Proseminar.tex
@@ -628,11 +628,11 @@ Package hyperref Warning: bookmark level for unknown author defaults to 0.
 <RelCSE.jpg, id=246, 920.68968pt x 272.51813pt>
 File: RelCSE.jpg Graphic file (type jpg)
 <use RelCSE.jpg>
-Package pdftex.def Info: RelCSE.jpg  used on input line 98. on input line 98.
+Package pdftex.def Info: RelCSE.jpg  used on input line 99. on input line 99.
 Package pdftex.def Info: Requested size: 432.56967pt x 128.0374pt on input line
- 98.
+ 99.
 
-Overfull \hbox (30.59569pt too wide) in paragraph at lines 97--99
+Overfull \hbox (30.59569pt too wide) in paragraph at lines 98--100
 []|  [] 
  []
 
@@ -640,7 +640,7 @@ Overfull \hbox (30.59569pt too wide) in paragraph at lines 97--99
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-Overfull \hbox (3.00648pt too wide) in paragraph at lines 109--111
+Overfull \hbox (3.00648pt too wide) in paragraph at lines 110--112
  \T1/cmr/bx/n/10 2.3.2 Con-tin-u-ous De-liv-ery[][] \T1/cmr/m/n/10 A brief def-
 i-ni-tion of Con-tin-u-ous De-liv-ery \T1/cmr/bx/n/10 (CDE)
  []
@@ -649,44 +649,42 @@ i-ni-tion of Con-tin-u-ous De-liv-ery \T1/cmr/bx/n/10 (CDE)
 <CDBenefits.jpg, id=291, 187.45032pt x 153.57375pt>
 File: CDBenefits.jpg Graphic file (type jpg)
 <use CDBenefits.jpg>
-Package pdftex.def Info: CDBenefits.jpg  used on input line 121. on input line 
-121.
+Package pdftex.def Info: CDBenefits.jpg  used on input line 122. on input line 
+122.
 Package pdftex.def Info: Requested size: 156.29019pt x 128.0374pt on input line
- 121.
-
-Overfull \hbox (3.93127pt too wide) in paragraph at lines 136--138
-\T1/cmr/m/n/10 The main ideas within this sec-tion come from [[]], [[]] and [[]
-].
- []
-
+ 122.
 <Stairway.jpg, id=310, 583.42969pt x 139.27031pt>
 File: Stairway.jpg Graphic file (type jpg)
 <use Stairway.jpg>
-Package pdftex.def Info: Stairway.jpg  used on input line 142. on input line 14
-2.
+Package pdftex.def Info: Stairway.jpg  used on input line 143. on input line 14
+3.
 Package pdftex.def Info: Requested size: 476.78629pt x 113.81102pt on input lin
-e 142.
+e 143.
 
-Overfull \hbox (74.8123pt too wide) in paragraph at lines 141--143
+Overfull \hbox (74.8123pt too wide) in paragraph at lines 142--144
 []|  [] 
  []
 
 [6 <./CDBenefits.jpg>]
-Overfull \hbox (0.29163pt too wide) in paragraph at lines 148--149
+Overfull \hbox (0.29163pt too wide) in paragraph at lines 149--150
 \T1/cmr/m/n/10 ap-proach, that is char-ac-ter-ized by slow de-vel-op-ment cy-cl
 es, the "wa-ter-fall model"
  []
 
-[7 <./Stairway.jpg>] [8]
+[7 <./Stairway.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 <teamstructure.jpg, id=364, 493.0922pt x 277.78781pt>
 File: teamstructure.jpg Graphic file (type jpg)
 <use teamstructure.jpg>
-Package pdftex.def Info: teamstructure.jpg  used on input line 172. on input li
-ne 172.
+Package pdftex.def Info: teamstructure.jpg  used on input line 173. on input li
+ne 173.
 Package pdftex.def Info: Requested size: 227.62204pt x 128.23323pt on input lin
-e 172.
- [9 <./teamstructure.jpg>]
-Overfull \hbox (7.50943pt too wide) in paragraph at lines 192--216
+e 173.
+
+[9 <./teamstructure.jpg>]
+Overfull \hbox (7.50943pt too wide) in paragraph at lines 191--215
 [][] 
  []
 
@@ -694,34 +692,34 @@ Overfull \hbox (7.50943pt too wide) in paragraph at lines 192--216
 <pipeline.jpg, id=398, 823.57687pt x 89.58469pt>
 File: pipeline.jpg Graphic file (type jpg)
 <use pipeline.jpg>
-Package pdftex.def Info: pipeline.jpg  used on input line 232. on input line 23
-2.
+Package pdftex.def Info: pipeline.jpg  used on input line 231. on input line 23
+1.
 Package pdftex.def Info: Requested size: 341.42616pt x 48.36954pt on input line
- 232.
+ 231.
  [11 <./pipeline.jpg>]
 <Tools.jpg, id=419, 487.8225pt x 209.28188pt>
 File: Tools.jpg Graphic file (type jpg)
 <use Tools.jpg>
-Package pdftex.def Info: Tools.jpg  used on input line 270. on input line 270.
+Package pdftex.def Info: Tools.jpg  used on input line 269. on input line 269.
 Package pdftex.def Info: Requested size: 364.76433pt x 156.49014pt on input lin
-e 270.
+e 269.
 
-Overfull \hbox (17.6408pt too wide) in paragraph at lines 270--271
+Overfull \hbox (17.6408pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
 [12] [13 <./Tools.jpg>] [14] [15] (Niko_Benkler_Proseminar.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
  [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
 
 (Niko_Benkler_Proseminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `Niko_Benkler_Proseminar.out' has not changed
 .
 (rerunfilecheck)             Checksum: ECEF9D17D035A2B05DC12F71AF75867B;2842.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
  9548 strings out of 493312
@@ -730,7 +728,7 @@ Here is how much of TeX's memory you used:
  12876 multiletter control sequences out of 15000+200000
  15976 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,9n,36p,1245b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,9n,36p,1250b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecti0900.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1000.pk> <C:\Users\Nikolaus\AppData\Local\MiKTeX\2.9\fonts\
@@ -744,9 +742,9 @@ ppen\ec\dpi600\ecbx1440.pk><C:/Users/Nikolaus/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nikolaus/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nikolaus/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on Niko_Benkler_Proseminar.pdf (16 pages, 483469 bytes).
+Output written on Niko_Benkler_Proseminar.pdf (16 pages, 483052 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
+ 895 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
  303 words of extra memory for PDF output out of 10000 (max. 10000000)
 
