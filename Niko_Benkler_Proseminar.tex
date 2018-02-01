@@ -34,7 +34,7 @@
 
 \mainmatter
 
-\title{From Traditional Development to Continuous Deployment: Strategies and practices in CI/CD Pipelines}
+\title{From Traditional Development to Continuous Deployment: Strategies and Practices in CI/CD Pipelines}
 \titlerunning{Strategies and practices in CI/CD Pipelines}
 \author{Niko Benkler }
 \authorrunning{Strategies and practices in CI/CD Pipelines}
@@ -59,7 +59,7 @@
 
 
 \section{Introduction}
-Today, the software development process has to face many difficult demands.The area of fast-changing and unpredictable markets, changing customer demands  and rapidly advancing information technologies \cite{olsson2012climbing} \cite{claps2015journey} require a faster and more flexible process of software development. 
+Today, the software development process has to face many difficult demands. The area of fast-changing and unpredictable markets, changing customer demands  and rapidly advancing information technologies \cite{olsson2012climbing} \cite{claps2015journey} require a faster and more flexible process of software development. 
 To achieve this, several organizations adopt Continuous Practices in order to extend their agile practices \cite{claps2015journey} or to replace their traditional development methodologies. Therefore, releasing software becomes even faster. 
 \\
 This seminar paper presents a possible evolution path, referenced as 'stairway to heaven' \cite{olsson2012climbing}, which describes a transition from traditional development towards CD. The core of CSE is a deployment pipeline \cite{schermann2016empirical}. Therefore the paper also presents its usual phases and the possible tools, that support each phase.
@@ -107,7 +107,7 @@ CI improves effectiveness of a team as well as software quality \cite{shahin2017
 
 
 \subsubsection{Continuous Delivery}
-A brief definition of Continuous Delivery \textbf{(CDE)} is given in \cite{laukkanen2016bottom}: "Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time." 
+Continuous Delivery \textbf{(CDE)} is a software engineering concept ensuring that the produced software can be released to production at any time.
 Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deploy and deliver software to a production like environment \cite{shahin2017continuous}. This practice has several benefits, including a less risky release process \cite{laukkanen2016bottom} due to automation and the ability to learn from real usage data \cite{olsson2012climbing}. As a consequence, the software developers can decide whether it is worth continuing the work on a certain feature or discard it. As shown in Fig.\ref{RelCSE}, the release process is manual. This is concurrent with the definition of CDE, where it is mentioned that software 'can' be released automatically  instead of 'is' released. Therefore, the CDE practice is classified as a pull-based approach, "for which business decides what and when to deploy" \cite{shahin2017continuous}.
 
 
@@ -115,7 +115,8 @@ Preconditions for CDE are CI and a mechanism (e.g a tool) to automatically deplo
 \subsubsection{Continuous Deployment}
 An extreme version of CDE is Continuous Deployment \textbf{(CD)}, where software 'is' actually released automatically. The goal of CD is to frequently deploy the software in a production environment. This happens for example several times a day (after each commit), once a day (nightly build) or several times a week (weekend builds). Fig. \ref{CDBenefits}  provides a quick overview of CDE and consequently CD benefits. CD is a push-based approach \cite{shahin2017continuous}, as no manual task takes place in order to deploy the software to customer site. The CD (and CDE) practice is attained by using a deployment pipeline \cite{laukkanen2016bottom}, which is explained in Section IV.
 Whereas CD implies the usage of CDE practices, the inversion is not correct \cite{shahin2017continuous}.
-Due to barriers such as "lack of automated (user) acceptance tests", "deployment as a business decision", "insufficient level of automated test coverage" \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. This topic is discussed in Section V. 
+Due to barriers such as shortage of automated (user) acceptance tests, poor automated test coverage \cite{shahin2017beyond} or the unsuitability of software types like embedded systems \cite{claps2015journey}, a forced transition from CDE to CD might not always be a good idea. Furthermore, deploying software is sometimes subjected to business decisions.
+This topic is discussed in Section V. 
 
  \begin{figure}[h]
  	\centering
@@ -146,7 +147,7 @@ The main ideas within this section originate from \cite{shahin2017continuous}, \
 
 
 \subsubsection{Phase 1: Traditional Development}
-Traditional development is an approach, that is characterized by slow development cycles, the "waterfall model"  and a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process typically stands at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the disadvantages that come along. It has to be noticed, that it is not the aim of this seminar paper to evaluate the suitability of this kind of software development and architecture. For successfully implementing Continuous Practices, it is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step in software evolution is agile organization. 
+Traditional development is an approach, that is characterized by slow development cycles, the "waterfall model"  and a bad customer integration \cite{olsson2012climbing}.  The delivery and deployment process typically stands at the end of the project. Usually, the developed software is formed as a monolithic 3-Layer architecture with all the disadvantages that come along. It has to be noticed, that it is not the aim of this seminar paper to evaluate the suitability of this kind of software development and architecture. For successfully implementing Continuous Practices, it is simply not suitable \cite{claps2015journey} \cite{shahin2017continuous} \cite{shahin2016intersection} \cite{shahin2017beyond}. The next step on the evolution path from Traditional Development towards Continuous Deployment is to adopt Agile Methodologies. 
 
 \subsubsection{Phase 2: Agile Organization}
 A brief introduction in Agile Methodologies is given in section \ref{background} . Agile Organization, of course, includes agile methodologies, but "product management and system verification still work according to the traditional development model" \cite{olsson2012climbing}.
@@ -157,7 +158,13 @@ The next step of the "stairway to heaven" is Continuous Integration. The followi
 \subsubsection{Phase 3: Continuous Integration}  
 The core of CI is the continuous integration of code into a shared repository across all teams while developing a software product. Again, a cultural shift is necessary in order to implement CI practices \cite{olsson2012climbing}. Branching strategies like trunk-based development (TBD), the implementation of feature toggle (FT) or the concept of full developer awareness (AWA) facilitate practising CI. 
 \\
-The continuous integration of code by many different teams can result in long-living parallel development branches. To reduce complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk. But what happens to features that are not ready to be deployed, but already integrated into master? The concept of Feature Toggles provides a good solution strategy. In very simple terms, Feature Toggles permit to switch on and off a certain code block. Whenever a feature is ready for production, it gets activated. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by dashboards, public monitors in the office or chat tools. This simplifies the information flow and creates transparency.
+The continuous integration of code by many different teams can result in long-living parallel development branches. To reduce complexity, \cite{schermann2016empirical} proposes trunk-based development, where all teams integrate into one single branch, called master branch or master trunk.
+
+
+
+Features that are not ready to be deployed, but already integrated into master need to be managed, as they should not affect the current software. 
+This can be done by using Feature Toggles.
+In very simple terms, Feature Toggles permit to switch on and off a certain code block. Whenever a feature is ready for production, it gets activated. Another concept to enable and promote full transparency of the project (e.g build status, test coverage, latest client version or status and progress of features) is called (full) Developer Awareness(AWA). AWA is realized by dashboards, public monitors in the office or chat tools. This simplifies the information flow and creates transparency.
 \\
 Fig. \ref{RelCSE} demonstrates, that not only code integration, but also automated builds and test play a huge role in Continuous Practises, especially CI. Adopting "test-driven development" (TDD), "test planning" and "cross-team testing" improves the test phase during CI. TDD is a process in which requirements or user stories are turned into very specific tests. It is divided into 4 different steps: First, add a test based on a required feature; second, run all tests and see which test fails; then write or refactor the code; finally, run the tests again. Repeat those steps in very short development cycles until all test cases are passing. This helps to continuously check the quality of the written code. "Test planning" is a concept to intensify the collaboration between Quality Assurance (QA) and developers according to the DevOps principles. Together, they produce a comprehensive list of automated tests. This "liberates QAs from manually testing the majority of the software application for regression bugs" \cite{shahin2017continuous}. In "cross-team testing", tests are performed by a group of developers from another team and vice versa. 
 \\
@@ -183,7 +190,7 @@ Canary Release is a deployment method where a new software version is deployed o
 A/B Testing is similar to canary release. It requires a bigger user base, as there are two versions released parallel. By collecting statistics, the team is able to decide whether version A or B performs better.
 Dark Launching is the process of deploying functionality to production in order to test it, but with limited or no access for any users. This enables the team to test new functionality in the production environment and consequently to decide, whether the feature is ready to "handle production-scale traffic" \cite{schermann2016empirical}. To dark launch a feature, the team implements the old and the new feature with Feature Toggles and decides which one to show in the user interface.
 
-\subsection{A comparison between Traditional Development, Agile Development and the CD process}
+\subsection{A comparison between Traditional Development, Agile Development and the CD Process}
 The following table compares the development and deployment of the traditional, agile and CD process based on \cite{claps2015journey}.
 
 \begin{table}
@@ -220,59 +227,46 @@ The following table compares the development and deployment of the traditional, 
 A Deployment Pipeline is considered to be the core of the CSE process. It enables organizations to automate code integration, build process, testing, configuration and deployment. Common stages of CD/CDE pipelines are "version control", "build", "continuous integration","artifact repository management", "unit/integration/acceptance/performance testing", "deployment", "configuration and provisioning", "log management and monitoring", "containerization" or "issue tracking" \cite{shahin2017beyond} \cite{taheritanjani2016comparison}. The vast amount of possible stages demonstrates, that there is no universally applicable pipeline. \cite{chen2015continuous} goes even further: Pipelines should be redesigned for each application to best suit the needs.
 \\
 Nevertheless, the main idea of a pipeline in CDE is always the same: Moving from stage to stage is (at least semi-)automated. If any error occurs, the pipeline stops and notifies the development team. They fix it and start the pipeline again by committing the changes. 
-\\
 Thus, the engineering process of a pipeline, the software's architecture, the degree of automation or the available tools generate serious challenges. These are discussed in Section 5.
 
-\subsection{Example: A deployment pipeline} 
+\subsection{Example: A Deployment Pipeline} 
 The example pipeline is divided in 7 stages: 1. Version Control System, 2. Code Management and Analysis, 3. Build System, 4. Continuous Integration Server, 5. Testing, 6. Configuration and Provisioning, 7. Continuous Delivery/Deployment Server \cite{shahin2017continuous}.
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=12cm, height = 1.7cm]{pipeline}  
 	\caption{\label{pipeline}Deployment Pipeline based on \cite{shahin2017continuous} } 
 \end{figure}
-
-\subsubsection{Version Control System}
-The Version Control System manages the continuous code push to the repository. It tracks files to create a history of the development process. The most popular examples are GitHub and Subversion. GitHub Issues as an Issue Tracking software can be integrated here as well. \cite{taheritanjani2016comparison}.
-\subsubsection{Code Management and Analysis}
-Code Management and Analysis tools check the code concerning static quality metrics. Those can be: code and test coverage, coding standards like comments, alignment or duplicated code. SonarQube is one of the most popular tools, as it can be fully integrated in CI environment \cite{shahin2017continuous}.
-\subsubsection{Build System}
-Build tools simplify the build process. They compile the source code automatically into binary code and packages. Popular Tools are Apache Maven or Ant.
-\subsubsection{CI Server}
-The CI server observes the code repository. According to the respective build policy, it triggers the Build System and runs the tests whenever a change is committed. Bamboo, Jenkins and Travis CI are the most common CI Server tools.
-\subsubsection{Testing}
-Testing is the key aspect to guarantee high quality software. Due to this there are various different kinds of tests: Unit tests, regression tests, (user) acceptance tests, integration tests or performance tests.
 \\
+The \textbf{Version Control System} manages the continuous code push to the repository. It tracks files to create a history of the development process. The most popular examples are GitHub and Subversion. GitHub Issues as an Issue Tracking software can be integrated here as well. \cite{taheritanjani2016comparison}.
+\\
+\textbf{Code Management and Analysis} tools check the code concerning static quality metrics. Those can be: code and test coverage, coding standards like comments, alignment or duplicated code. SonarQube is one of the most popular tools, as it can be fully integrated in CI environment \cite{shahin2017continuous}.
+\\
+\textbf{Build System} tools simplify the build process. They compile the source code automatically into binary code and packages. Popular Tools are Apache Maven or Ant.
+\\
+The \textbf{CI server} observes the code repository. According to the respective build policy, it triggers the Build System and runs the tests whenever a change is committed. Bamboo, Jenkins and Travis CI are the most common CI Server tools.
+\\
+\textbf{Testing} is the key aspect to guarantee high quality software. Due to this there are various different kinds of tests: Unit tests, regression tests, (user) acceptance tests, integration tests or performance tests.
 JUnit is a common tool to run unit tests. To store the results of acceptance tests, \cite{shahin2017continuous} proposes the test management framework TestLink. Besides, the CRTS(Continuous Regression Test Selection) and CTSP(Continuous Test Suite Prioritization) approaches intend to support effective regression tests within the CI server environment. The combination  of CUTS and CruiseControl (CI Server tool) is used to continuously run system integration tests.
-
-
-
-
-
-\subsubsection{Configuration and Provisioning}
-Automating the configuration and provision of servers, test environments, virtual machines or infrastructure is an innovation in deployment pipelines \cite{shahin2017continuous}. Usually, a vast amount of time is needed to set up those environments \cite{chen2015towards}. Therefore, automation is absolutely necessary but there are currently not that many tools available.
-
-
-
-\subsubsection{CD Server}
-The release process of a software is the final stage in Continuous Software Engineering. Having a tool that automatically deploys code to production (either internally or externally) is substantial for successfully accomplish the goal of CSE.
 \\
+Automating the \textbf{Configuration and Provision} of servers, test environments, virtual machines or infrastructure is an innovation in deployment pipelines \cite{shahin2017continuous}. Usually, a vast amount of time is needed to set up those environments \cite{chen2015towards}. Therefore, automation is absolutely necessary but there are currently not that many tools available.
+\\
+The \textbf{CD Server} manages the final stage in Continuous Software Engineering which is the release process. Having a tool that automatically deploys code to production (either internally or externally) is substantial for successfully accomplish the goal of CSE.
 HockeyApp is a well-established CDE server. Web Deploy or Deployr are software tools to automatically deploy code to production. \cite{shahin2017continuous}.
 
 
 
 \subsection{Tools in a Deployment Pipeline}
-Fig.\ref{Tools} shows a selection of tools that can be used to build the presented pipeline. They are split into the stages of the pipeline. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed explanation or comparison of those tools, as this goes beyond the scope of this work.
+Fig.\ref{Tools} shows a selection of tools that can be used to build a pipeline. They are split into the stages of the pipeline. Some of them are expensive enterprise tools, others are Open Source. This seminar paper does not aim to give a detailed comparison of those tools, as this goes beyond the scope of this work.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\centering
-	\includegraphics[height=5.5cm]{Tools}  
+	\includegraphics[height=5.3cm]{Tools}  
 	\caption{\label{Tools}An overview of tools used to form a deployment pipeline \cite{shahin2017continuous} } 
 \end{figure}
 
 \newpage
 
-\section{Challenges for Adopting Continuous Practices}
+\section{Challenges for adopting Continuous Practices}
 "Continuous Delivery: Huge Benefits, but Challenges Too" \cite{chen2015continuous}. This is how Lianping Chen, a software developer of a company called Paddy Power, names his paper. He describes how they (Paddy Power) adopted Continuous Practices, reporting "huge benefits and challenges involved".
 \\
 The literature about Continuous Practices in general shows that developers often face challenges while adopting CI, CDE or CD.
